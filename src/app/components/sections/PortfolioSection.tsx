@@ -1,5 +1,4 @@
 import { Instagram, ExternalLink } from "lucide-react";
-import { Button } from "../ui/button";
 
 interface Project {
   title: string;
@@ -111,14 +110,14 @@ const PortfolioSection = ({ showAll = false }: PortfolioSectionProps) => {
                   </div>
                 </div>
 
-                <Button
-                  variant="outline"
+                <button
+                  type="button"
                   onClick={() => window.open(`https://www.instagram.com/p/${project.postId}/`, '_blank')}
-                  className="w-full mt-4 border-2 border-accent/50 text-accent hover:bg-accent hover:text-white rounded-xl"
+                  className="w-full mt-4 border-2 border-accent/50 text-accent hover:bg-accent hover:text-white rounded-xl bg-transparent border transition-colors flex items-center justify-center py-2 px-4 font-medium"
                 >
                   <ExternalLink className="w-4 h-4 mr-2" />
                   View on Instagram
-                </Button>
+                </button>
               </div>
             </div>
           ))}
