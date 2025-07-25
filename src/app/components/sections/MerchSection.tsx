@@ -13,10 +13,10 @@ export default function MerchSection() {
           {/* Right: Coming Soon (text first on mobile, left on desktop) */}
           <div className="flex-1 flex flex-col items-center md:items-start text-center md:text-left gap-5 min-w-[160px] min-h-[160px] md:min-w-[320px] md:min-h-[320px] justify-center order-1 md:order-2">
             <span className="bg-blue-900/40 p-5 rounded-lg mb-2 flex items-center justify-center mx-auto md:mx-0 md:mb-4"><ShoppingBag className="w-10 h-10 text-blue-400" /></span>
-            <h3 className="text-2xl md:text-4xl font-extrabold text-white mb-2 md:mb-2 md:text-left">Coming Soon!</h3>
-            <p className="text-base sm:text-lg md:text-xl text-blue-300 mb-4 max-w-lg md:text-left">
+            <h2 className="text-2xl md:text-4xl font-extrabold text-white mb-2 md:mb-2 md:text-left">Coming Soon!</h2>
+            <h3 className="text-base sm:text-lg md:text-xl text-blue-300 mb-4 max-w-lg md:text-left">
               We&apos;re working on something special. Exclusive merchandise is coming soon—stay tuned for amazing products!
-            </p>
+            </h3>
           </div>
           {/* Left: Meme Image (below text on mobile, left on desktop) */}
           <div className="flex-1 flex justify-center items-center relative min-w-[160px] min-h-[160px] md:min-w-[320px] md:min-h-[320px] order-2 md:order-1">

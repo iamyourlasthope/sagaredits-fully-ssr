@@ -18,9 +18,9 @@ const AboutSection = () => {
             About <span className="text-blue-500">Me</span>
           </h1>
           <div className="max-w-4xl mx-auto px-2 sm:px-0">
-            <p className="text-base sm:text-lg lg:text-xl text-blue-200 leading-relaxed">
+            <h2 className="text-base sm:text-lg lg:text-xl text-blue-200 leading-relaxed">
               Experienced digital content creator with over <span className="text-accent font-semibold">5 years of expertise</span> in video editing and social media management. Successfully grew Instagram and YouTube to <span className="text-accent font-semibold">100K+ each</span>, and collaborated on promo campaigns for <span className="text-accent font-semibold">Amazon Prime, Mini TV</span>, and more.
-            </p>
+            </h2>
           </div>
         </header>
 
@@ -46,12 +46,12 @@ const AboutSection = () => {
 
           {/* Skills - Mobile Optimized */}
           <div className="space-y-6 sm:space-y-8 order-2 lg:order-2 px-2 sm:px-0">
-            <h3 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6 text-center lg:text-left">Skills & Expertise</h3>
+            <h2 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6 text-center lg:text-left">Skills & Expertise</h2>
             <ul className="space-y-3 sm:space-y-4" role="list">
               {skills.map((skill, index) => (
                 <li key={index} className="flex items-start space-x-3 touch-manipulation">
                   <CheckCircle className="w-5 h-5 sm:w-6 sm:h-6 text-blue-500 flex-shrink-0 mt-0.5" aria-hidden="true" />
-                  <span className="text-sm sm:text-base lg:text-lg leading-relaxed">{skill}</span>
+                  <h3 className="text-sm sm:text-base lg:text-lg leading-relaxed">{skill}</h3>
                 </li>
               ))}
             </ul>

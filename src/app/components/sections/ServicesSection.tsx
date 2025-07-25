@@ -14,9 +14,9 @@ export default function ServicesSection() {
           <h1 className="text-xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-center mb-2 whitespace-nowrap mt-4 sm:mt-0">
             My <span className="text-blue-500">Services</span>
           </h1>
-          <p className="text-base sm:text-base md:text-xl text-blue-200 text-center mb-6 max-w-2xl">
+          <h2 className="text-base sm:text-base md:text-xl text-blue-200 text-center mb-6 max-w-2xl">
             Let&apos;s create content that resonates, engages, and converts your audience.
-          </p>
+          </h2>
         </div>
         {/* Main Service Card */}
         <div className="flex flex-col md:flex-row items-center bg-[#101828] border border-blue-400/80 rounded-2xl shadow-2xl p-8 gap-8 mb-4 relative">
@@ -30,7 +30,7 @@ export default function ServicesSection() {
           <div className="flex-1 flex flex-col gap-4 order-2 md:order-1">
             <div className="flex items-center gap-3 mb-2">
               <span className="bg-blue-900/40 p-3 rounded-lg"><TrendingUp className="w-6 h-6 md:w-7 md:h-7 text-blue-400" /></span>
-              <h3 className="text-xl md:text-3xl font-extrabold text-white">MEME marketing/video editing <span className="text-xl md:text-2xl">🔥</span></h3>
+              <h2 className="text-xl md:text-3xl font-extrabold text-white"><strong>MEME marketing/video editing</strong> <span className="text-xl md:text-2xl">🔥</span></h2>
             </div>
             <p className="text-base md:text-lg text-white/80 mb-4">I create trend-based, relatable meme content and provide professional video editing to promote your brand or project across digital platforms. Let&apos;s make your next campaign go viral.</p>
             <div className="flex flex-wrap gap-4 md:gap-6 mb-4">
@@ -45,12 +45,12 @@ export default function ServicesSection() {
         {/* Other Services */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="bg-[#101828] border border-blue-700/40 rounded-2xl shadow-xl p-6 flex flex-col gap-3">
-            <div className="flex items-center gap-2 mb-2"><Video className="w-6 h-6 text-blue-400" /><span className="text-xl font-bold text-white">Video Editing</span></div>
-            <p className="text-blue-200 text-base">Professional video editing with Adobe Premiere Pro and After Effects for your brand content and campaigns.</p>
+            <div className="flex items-center gap-2 mb-2"><Video className="w-6 h-6 text-blue-400" /><h2 className="text-xl font-bold text-white">Video Editing</h2></div>
+            <h3 className="text-blue-200 text-base">Professional video editing with Adobe Premiere Pro and After Effects for your brand content and campaigns.</h3>
           </div>
           <div className="bg-[#101828] border border-blue-700/40 rounded-2xl shadow-xl p-6 flex flex-col gap-3">
-            <div className="flex items-center gap-2 mb-2"><TrendingUp className="w-6 h-6 text-blue-400" /><span className="text-xl font-bold text-white">Viral Content Strategy</span></div>
-            <p className="text-blue-200 text-base">An end-to-end strategy for creating viral, trend-based content that maximizes reach and engagement for your brand.</p>
+            <div className="flex items-center gap-2 mb-2"><TrendingUp className="w-6 h-6 text-blue-400" /><h2 className="text-xl font-bold text-white">Viral Content Strategy</h2></div>
+            <h3 className="text-blue-200 text-base">An end-to-end strategy for creating viral, trend-based content that maximizes reach and engagement for your brand.</h3>
           </div>
         </div>
       </div>

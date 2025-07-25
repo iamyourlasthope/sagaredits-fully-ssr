@@ -61,9 +61,9 @@ export default function ProjectsSection() {
         <h1 className="text-xl sm:text-4xl md:text-5xl font-extrabold mb-6 tracking-tight text-center whitespace-nowrap mt-4 sm:mt-0">
           Projects <span className="text-blue-500">Showcase</span>
         </h1>
-        <p className="text-base sm:text-base md:text-xl text-blue-300 mb-12 max-w-3xl text-center font-medium">
+        <h2 className="text-base sm:text-base md:text-xl text-blue-300 mb-12 max-w-3xl text-center font-medium">
           From viral memes to brand campaigns, here&apos;s how I&apos;ve helped brands connect with millions of users.
-        </p>
+        </h2>
         {/* Pure CSS Show More Projects Toggle */}
         <input type="checkbox" id="show-more-projects" className="peer hidden" />
         <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
