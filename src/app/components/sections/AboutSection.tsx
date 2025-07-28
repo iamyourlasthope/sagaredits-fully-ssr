@@ -11,7 +11,7 @@ const skills = [
 
 const AboutSection = () => {
   return (
-    <section id="about" className="section-about py-6 sm:py-16 lg:py-20 px-10 sm:px-6 pb-6 relative z-10" role="region" aria-labelledby="about-heading">
+    <section id="about" className="py-6 sm:py-18 lg:py-18 px-10 sm:px-6 pb-6 relative z-10" role="region" aria-labelledby="about-heading">
       <div className="container mx-auto">
         <header className="text-center mb-10 sm:mb-12 lg:mb-16">
           <h1 id="about-heading" className="text-xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-center mb-2 whitespace-nowrap mt-4 sm:mt-0">
@@ -19,7 +19,7 @@ const AboutSection = () => {
           </h1>
           <div className="max-w-4xl mx-auto px-2 sm:px-0">
             <h2 className="text-base sm:text-lg lg:text-xl text-blue-200 leading-relaxed">
-              Experienced digital content creator with over <span className="text-accent font-semibold">5 years of expertise</span> in video editing and social media management. Successfully grew Instagram and YouTube to <span className="text-accent font-semibold">100K+ each</span>, and collaborated on promo campaigns for <span className="text-accent font-semibold">Amazon Prime, Mini TV</span>, and more.
+              Experienced digital content creator with over <span className="text-blue-400 font-semibold">5 years of expertise</span> in video editing and social media management. Successfully grew Instagram and YouTube to <span className="text-blue-400 font-semibold">100K+ each</span>, and collaborated on promo campaigns for <span className="text-blue-400 font-semibold">Amazon Prime, Mini TV</span>, and more.
             </h2>
           </div>
         </header>
@@ -38,9 +38,9 @@ const AboutSection = () => {
                 style={{ transform: 'rotate(3deg)' }}
               />
               {/* Modern floating elements - Responsive */}
-              <div className="absolute -top-2 -right-2 sm:-top-3 sm:-right-3 lg:-top-4 lg:-right-4 w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8 bg-accent/70 rounded-full animate-pulse shadow-lg"></div>
-              <div className="absolute -bottom-2 -left-2 sm:-bottom-3 sm:-left-3 lg:-bottom-4 lg:-left-4 w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6 bg-[hsl(var(--electric-blue))] rounded-full animate-pulse delay-1000 shadow-lg"></div>
-              <div className="absolute top-1/2 -left-4 sm:-left-6 lg:-left-8 w-3 h-3 sm:w-3.5 sm:h-3.5 lg:w-4 lg:h-4 bg-accent/50 rounded-full animate-pulse delay-500 shadow-lg"></div>
+              <div className="absolute -top-2 -right-2 sm:-top-3 sm:-right-3 lg:-top-4 lg:-right-4 w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8 bg-blue-500/70 rounded-full animate-pulse shadow-lg"></div>
+              <div className="absolute -bottom-2 -left-2 sm:-bottom-3 sm:-left-3 lg:-bottom-4 lg:-left-4 w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6 bg-blue-400 rounded-full animate-pulse delay-1000 shadow-lg"></div>
+              <div className="absolute top-1/2 -left-4 sm:-left-6 lg:-left-8 w-3 h-3 sm:w-3.5 sm:h-3.5 lg:w-4 lg:h-4 bg-blue-500/50 rounded-full animate-pulse delay-500 shadow-lg"></div>
             </div>
           </div>
 

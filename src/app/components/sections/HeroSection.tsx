@@ -1,6 +1,6 @@
 import Image from "next/image";
-import { Instagram, Youtube, ArrowDown, ExternalLink } from "lucide-react";
-import React from "react";
+import { Instagram, Youtube, ExternalLink } from "lucide-react";
+import HeroButtons from "./HeroButtons";
 
 export default function HeroSection() {
   return (
@@ -9,10 +9,25 @@ export default function HeroSection() {
       className="section-hero min-h-screen w-full flex items-center justify-center pt-28 px-10 sm:px-10 md:px-8 pb-6 sm:pb-16 relative overflow-hidden bg-fixed"
       role="banner"
       aria-label="Hero Section"
+      style={{
+        background: "radial-gradient(ellipse at 60% 40%, #0a0a0a 60%, #0a1a2f 100%)",
+        backgroundColor: "#050a15"
+      }}
     >
-      <div id="stars"></div>
-      <div id="stars2"></div>
-      <div id="stars3"></div>
+      <div className="fogwrapper">
+        <div id="foglayer_01">
+          <div className="image01"></div>
+          <div className="image02"></div>
+        </div>
+        <div id="foglayer_02">
+          <div className="image01"></div>
+          <div className="image02"></div>
+        </div>
+        <div id="foglayer_03">
+          <div className="image01"></div>
+          <div className="image02"></div>
+        </div>
+      </div>
       <div className="container mx-auto max-w-7xl w-full relative z-10">
         <div className="grid lg:grid-cols-2 gap-2 sm:gap-8 lg:gap-16 items-center w-full">
           {/* Left Content */}
@@ -21,7 +36,7 @@ export default function HeroSection() {
               <span className="block text-base sm:text-xl font-medium mb-1">Meet the Guy Behind</span>
               <span className="block text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold leading-tight">Sagar Edits</span>
               <span className="block text-lg sm:text-2xl font-semibold mt-2">
-                Hi, I’m Sagar Singh – <span className="text-blue-400">viral content creator, video editor, and social media strategist.</span>
+                Hi, I&apos;m Sagar Singh – <span className="text-blue-400">viral content creator, video editor, and social media strategist.</span>
               </span>
             </h1>
             {/* Social Stats */}
@@ -59,25 +74,8 @@ export default function HeroSection() {
                 </a>
               </div>
             </nav>
-            {/* CTA Buttons (with smooth scroll and hover animation) */}
-            <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4 lg:gap-5 justify-center lg:justify-start px-2 sm:px-0" role="group" aria-label="Call to Action Buttons">
-              <a
-                href="#projects"
-                className="inline-flex items-center gap-3 px-8 py-3 rounded-full bg-gradient-to-r from-blue-500 to-blue-600 text-white font-bold text-lg shadow-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 transform hover:scale-105 hover:shadow-2xl hover:bg-blue-700/90 active:scale-95 text-center justify-center sm:justify-start"
-                style={{ minWidth: 220 }}
-                aria-label="View Sagar Singh's portfolio work"
-              >
-                View My Work <ArrowDown className="w-5 h-5" />
-              </a>
-              <a
-                href="#contact"
-                className="inline-flex items-center gap-3 px-8 py-3 rounded-full border border-blue-400 text-blue-400 font-bold text-lg bg-transparent transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 transform hover:scale-105 hover:shadow-xl hover:bg-blue-900/10 active:scale-95 text-center justify-center sm:justify-start"
-                style={{ minWidth: 180 }}
-                aria-label="Contact Sagar Singh for collaborations"
-              >
-                Get In Touch
-              </a>
-            </div>
+            {/* CTA Buttons - Now using client component */}
+            <HeroButtons />
           </div>
           {/* Right Content - Hero Image */}
           <div className="flex justify-center lg:justify-end order-1 lg:order-2 mb-4 sm:mb-0">

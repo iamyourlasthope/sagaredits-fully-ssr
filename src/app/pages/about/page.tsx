@@ -5,8 +5,8 @@ export const metadata = {
 
 export default function AboutPage() {
   return (
-    <main className="min-h-screen bg-primary text-text flex items-center justify-center">
-      <h1 className="text-4xl font-heading">About Sagar Singh</h1>
+    <main className="min-h-screen bg-gray-900 text-white flex items-center justify-center">
+      <h1 className="text-4xl font-bold">About Sagar Singh</h1>
     </main>
   );
 } 

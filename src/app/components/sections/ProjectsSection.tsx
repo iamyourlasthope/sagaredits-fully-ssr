@@ -53,13 +53,13 @@ const projects = [
 
 export default function ProjectsSection() {
   return (
-    <section className="relative w-full min-h-screen flex flex-col justify-center items-center py-6 sm:py-16 px-10 sm:px-10 md:px-0 pb-6 sm:pb-16 overflow-hidden bg-gradient-to-br from-[#0a1a2f] to-[#0a1622]" id="projects">
+    <section className="relative w-full min-h-screen flex flex-col justify-center items-center py-6 sm:py-18 lg:py-18 px-10 sm:px-10 md:px-0 pb-6 sm:pb-16 overflow-hidden bg-gradient-to-br from-[#0a1a2f] to-[#0a1622] scroll-mt-20 sm:scroll-mt-0" id="projects">
       {/* Gradient background overlay */}
       <div className="absolute inset-0 bg-gradient-to-br from-[#0a0a0a] via-[#1a1a1a] to-blue-900 opacity-90 -z-10" />
       <div className="absolute inset-0 pointer-events-none -z-10" style={{background: "radial-gradient(ellipse at top right, #3b82f6 0%, transparent 70%)"}} />
       <div className="max-w-5xl w-full mx-auto flex flex-col items-center relative z-10">
         <h1 className="text-xl sm:text-4xl md:text-5xl font-extrabold mb-6 tracking-tight text-center whitespace-nowrap mt-4 sm:mt-0">
-          Projects <span className="text-blue-500">Showcase</span>
+          My Previous <span className="text-blue-500">Work</span>
         </h1>
         <h2 className="text-base sm:text-base md:text-xl text-blue-300 mb-12 max-w-3xl text-center font-medium">
           From viral memes to brand campaigns, here&apos;s how I&apos;ve helped brands connect with millions of users.

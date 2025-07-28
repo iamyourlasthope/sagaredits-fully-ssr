@@ -4,11 +4,11 @@ import { Menu } from "lucide-react";
 
 const navItems = [
   { name: "Home", section: "home" },
-  { name: "Featured Projects", section: "projects" },
-  { name: "Services", section: "services" },
   { name: "Merch", section: "merch" },
   { name: "About", section: "about" },
   { name: "Contact", section: "contact" },
+  { name: "View My Work", section: "projects" },
+  { name: "Promote Your Brand", section: "services" },
 ];
 
 export default function MobileMenu() {
@@ -65,7 +65,11 @@ export default function MobileMenu() {
                 <li key={item.name}>
                   <button
                     onClick={() => scrollToSection(item.section)}
-                    className="block text-lg font-semibold py-2 px-2 rounded focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 hover:bg-blue-900/10 hover:text-blue-400 transition-colors w-full text-left"
+                    className={`block text-lg font-semibold py-2 px-2 rounded focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 hover:bg-blue-900/10 hover:text-blue-400 transition-colors w-full text-left ${
+                      item.name === "Promote Your Brand" 
+                        ? "bg-blue-600 text-white hover:bg-blue-700" 
+                        : ""
+                    }`}
                     tabIndex={0}
                   >
                     {item.name}

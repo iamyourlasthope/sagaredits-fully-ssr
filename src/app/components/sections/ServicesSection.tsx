@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function ServicesSection() {
   return (
-    <section className="relative w-full min-h-screen flex flex-col justify-center items-center py-6 sm:py-16 px-10 sm:px-10 md:px-0 pb-6 sm:pb-16 overflow-hidden bg-gradient-to-br from-[#0a232e] to-[#08222b]" id="services">
+    <section className="relative w-full min-h-screen flex flex-col justify-center items-center py-6 sm:py-18 lg:py-18 px-10 sm:px-10 md:px-0 pb-6 sm:pb-16 overflow-hidden bg-gradient-to-br from-[#0a232e] to-[#08222b] scroll-mt-20 sm:scroll-mt-0" id="services">
       {/* Gradient background overlay */}
       <div className="absolute inset-0 bg-gradient-to-br from-[#0a0a0a] via-[#1a1a1a] to-blue-900 opacity-90 -z-10" />
       <div className="absolute inset-0 pointer-events-none -z-10" style={{background: "radial-gradient(ellipse at top right, #3b82f6 0%, transparent 70%)"}} />

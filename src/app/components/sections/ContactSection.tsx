@@ -7,7 +7,7 @@ export default function ContactSection() {
       <div className="absolute inset-0 bg-[#0a223a] -z-10" />
       <div className="w-full max-w-6xl mx-auto flex flex-col items-center relative z-10 md:px-0 md:mx-auto">
         {/* Heading and Subtitle */}
-        <h1 className="text-xl sm:text-5xl font-extrabold mb-2 text-center tracking-tight font-heading whitespace-nowrap mt-4 sm:mt-0">
+        <h1 className="text-xl sm:text-5xl font-extrabold mb-2 text-center tracking-tight whitespace-nowrap mt-4 sm:mt-0">
           <span className="text-white">Let&apos;s </span>
           <span className="bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent">Connect</span>
         </h1>
@@ -18,7 +18,7 @@ export default function ContactSection() {
         <div className="w-full flex flex-col-reverse md:flex-row gap-6 sm:gap-10 md:gap-8 items-start justify-center">
           {/* Left: Contact Form */}
           <div className="flex-1 w-full max-w-lg">
-            <h3 className="text-base sm:text-2xl font-extrabold mb-4 sm:mb-6 text-white font-heading text-center sm:text-left">
+            <h3 className="text-base sm:text-2xl font-extrabold mb-4 sm:mb-6 text-white text-center sm:text-left">
               Send Me a Message
             </h3>
             <ContactForm />
@@ -26,7 +26,7 @@ export default function ContactSection() {
           {/* Right: Get in touch and social links */}
           <div className="flex-1 w-full flex flex-col gap-1 md:gap-2 mt-8 sm:mt-12 md:mt-0 max-w-lg">
             <div>
-              <h3 className="text-lg sm:text-xl font-extrabold text-white mb-3 sm:mb-4 font-heading text-center sm:text-left">
+              <h3 className="text-lg sm:text-xl font-extrabold text-white mb-3 sm:mb-4 text-center sm:text-left">
                 Get in Touch
               </h3>
               <a
@@ -42,7 +42,7 @@ export default function ContactSection() {
               </a>
             </div>
             <div>
-              <h3 className="text-lg sm:text-xl font-extrabold text-white mb-3 sm:mb-4 font-heading text-center sm:text-left">
+              <h3 className="text-lg sm:text-xl font-extrabold text-white mb-3 sm:mb-4 text-center sm:text-left">
                 Follow Me
               </h3>
               <div className="flex flex-col gap-4">

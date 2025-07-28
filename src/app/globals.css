@@ -73,67 +73,198 @@ html {
   animation: badge-bounce 1.4s infinite cubic-bezier(0.4, 0, 0.6, 1);
 }
 
-@keyframes animStar {
-  from { transform: translateY(0px); }
-  to   { transform: translateY(-2000px); }
+/* ---------- Fog Animation for Hero Section (Randomized directions) ---------- */
+.fogwrapper {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  -webkit-filter: blur(1px) grayscale(0.2) saturate(1.2) sepia(0.2);
+  filter: blur(1px) grayscale(0.2) saturate(1.2) sepia(0.2);
+}
+#foglayer_01, #foglayer_02, #foglayer_03 {
+  height: 100%;
+  position: absolute;
+  width: 200%;
+}
+#foglayer_01 .image01, #foglayer_01 .image02,
+#foglayer_02 .image01, #foglayer_02 .image02,
+#foglayer_03 .image01, #foglayer_03 .image02 {
+  float: left;
+  height: 100%;
+  width: 50%;
+}
+#foglayer_01 {
+  /* Move left */
+  -webkit-animation: foglayer_01_opacity 18s linear infinite, foglayer_moveme_left 30s linear infinite;
+  -moz-animation: foglayer_01_opacity 18s linear infinite, foglayer_moveme_left 30s linear infinite;
+  animation: foglayer_01_opacity 18s linear infinite, foglayer_moveme_left 30s linear infinite;
+}
+#foglayer_02 {
+  /* Move right */
+  -webkit-animation: foglayer_02_opacity 36s linear infinite, foglayer_moveme_right 40s linear infinite;
+  -moz-animation: foglayer_02_opacity 36s linear infinite, foglayer_moveme_right 40s linear infinite;
+  animation: foglayer_02_opacity 36s linear infinite, foglayer_moveme_right 40s linear infinite;
+}
+#foglayer_03 {
+  /* Move left or right randomly (alternate for effect) */
+  -webkit-animation: foglayer_03_opacity 28s linear infinite, foglayer_moveme_right 50s linear infinite;
+  -moz-animation: foglayer_03_opacity 28s linear infinite, foglayer_moveme_right 50s linear infinite;
+  animation: foglayer_03_opacity 28s linear infinite, foglayer_moveme_right 50s linear infinite;
+}
+#foglayer_01 .image01, #foglayer_01 .image02 {
+  background: url("https://raw.githubusercontent.com/danielstuart14/CSS_FOG_ANIMATION/master/fog1.png") center center/cover no-repeat transparent;
+}
+#foglayer_02 .image01, #foglayer_02 .image02,
+#foglayer_03 .image01, #foglayer_03 .image02{
+  background: url("https://raw.githubusercontent.com/danielstuart14/CSS_FOG_ANIMATION/master/fog2.png") center center/cover no-repeat transparent;
+}
+@-webkit-keyframes foglayer_01_opacity {
+  0% { opacity: .1; }
+  22% { opacity: .5; }
+  40% { opacity: .28; }
+  58% { opacity: .4; }
+  80% { opacity: .16; }
+  100% { opacity: .1; }
+}
+@-moz-keyframes foglayer_01_opacity {
+  0% { opacity: .1; }
+  22% { opacity: .5; }
+  40% { opacity: .28; }
+  58% { opacity: .4; }
+  80% { opacity: .16; }
+  100% { opacity: .1; }
+}
+@-o-keyframes foglayer_01_opacity {
+  0% { opacity: .1; }
+  22% { opacity: .5; }
+  40% { opacity: .28; }
+  58% { opacity: .4; }
+  80% { opacity: .16; }
+  100% { opacity: .1; }
+}
+@keyframes foglayer_01_opacity {
+  0% { opacity: .1; }
+  22% { opacity: .5; }
+  40% { opacity: .28; }
+  58% { opacity: .4; }
+  80% { opacity: .16; }
+  100% { opacity: .1; }
+}
+@-webkit-keyframes foglayer_02_opacity {
+  0% { opacity: .5; }
+  25% { opacity: .2; }
+  50% { opacity: .1; }
+  80% { opacity: .3; }
+  100% { opacity: .5; }
+}
+@-moz-keyframes foglayer_02_opacity {
+  0% { opacity: .5; }
+  25% { opacity: .2; }
+  50% { opacity: .1; }
+  80% { opacity: .3; }
+  100% { opacity: .5; }
+}
+@-o-keyframes foglayer_02_opacity {
+  0% { opacity: .5; }
+  25% { opacity: .2; }
+  50% { opacity: .1; }
+  80% { opacity: .3; }
+  100% { opacity: .5; }
+}
+@keyframes foglayer_02_opacity {
+  0% { opacity: .5; }
+  25% { opacity: .2; }
+  50% { opacity: .1; }
+  80% { opacity: .3; }
+  100% { opacity: .5; }
+}
+@-webkit-keyframes foglayer_03_opacity {
+  0% { opacity: .8 }
+  27% { opacity: .2; }
+  52% { opacity: .6; }
+  68% { opacity: .3; }
+  100% { opacity: .8; }
+}
+@-moz-keyframes foglayer_03_opacity {
+  0% { opacity: .8 }
+  27% { opacity: .2; }
+  52% { opacity: .6; }
+  68% { opacity: .3; }
+  100% { opacity: .8; }
+}
+@-o-keyframes foglayer_03_opacity {
+  0% { opacity: .8 }
+  27% { opacity: .2; }
+  52% { opacity: .6; }
+  68% { opacity: .3; }
+  100% { opacity: .8; }
+}
+@keyframes foglayer_03_opacity {
+  0% { opacity: .8; }
+  27% { opacity: .2; }
+  52% { opacity: .6; }
+  68% { opacity: .3; }
+  100% { opacity: .8; }
+}
+@-webkit-keyframes foglayer_moveme_left {
+  0% { left: 0; }
+  100% { left: -100%; }
+}
+@-moz-keyframes foglayer_moveme_left {
+  0% { left: 0; }
+  100% { left: -100%; }
+}
+@-o-keyframes foglayer_moveme_left {
+  0% { left: 0; }
+  100% { left: -100%; }
+}
+@keyframes foglayer_moveme_left {
+  0% { left: 0; }
+  100% { left: -100%; }
+}
+@-webkit-keyframes foglayer_moveme_right {
+  0% { left: -100%; }
+  100% { left: 0; }
+}
+@-moz-keyframes foglayer_moveme_right {
+  0% { left: -100%; }
+  100% { left: 0; }
+}
+@-o-keyframes foglayer_moveme_right {
+  0% { left: -100%; }
+  100% { left: 0; }
+}
+@keyframes foglayer_moveme_right {
+  0% { left: -100%; }
+  100% { left: 0; }
+}
+@media only screen and (min-width: 280px) and (max-width: 767px) {
+  #foglayer_01 .image01, #foglayer_01 .image02,
+  #foglayer_02 .image01, #foglayer_02 .image02,
+  #foglayer_03 .image01, #foglayer_03 .image02 {
+    width: 100%;
+  }
 }
 
-#stars, #stars2, #stars3 {
-  position: absolute;
-  top: 0; left: 0;
-  width: 100vw;
-  height: 2000px;
-  pointer-events: none;
-  z-index: 0;
-}
-
-#stars {
-  width: 1px;
-  height: 1px;
-  background: transparent;
-  box-shadow: 1234px 567px #FFF, 234px 1234px #FFF, 345px 789px #FFF, 1000px 1500px #FFF, 800px 300px #FFF, 150px 1800px #FFF, 600px 1200px #FFF, 1750px 900px #FFF, 400px 1600px #FFF, 900px 400px #FFF, 300px 700px #FFF, 1200px 600px #FFF, 1600px 400px #FFF, 700px 300px #FFF, 1800px 150px #FFF, 567px 1234px #FFF, 1234px 345px #FFF, 789px 456px #FFF, 500px 500px #FFF, 200px 1800px #FFF, 1800px 200px #FFF, 100px 100px #FFF, 1900px 1900px #FFF, 300px 300px #FFF, 1700px 1700px #FFF, 400px 400px #FFF, 1600px 1600px #FFF, 500px 1500px #FFF, 1500px 500px #FFF, 600px 1400px #FFF, 1400px 600px #FFF, 700px 1300px #FFF, 1300px 700px #FFF, 800px 1200px #FFF, 1200px 800px #FFF, 900px 1100px #FFF, 1100px 900px #FFF, 1000px 1000px #FFF, 1050px 950px #FFF, 950px 1050px #FFF, 1150px 850px #FFF, 850px 1150px #FFF, 1250px 750px #FFF, 750px 1250px #FFF, 1350px 650px #FFF, 650px 1350px #FFF, 1450px 550px #FFF, 550px 1450px #FFF, 1550px 450px #FFF, 450px 1550px #FFF, 1650px 350px #FFF, 350px 1650px #FFF, 1750px 250px #FFF, 250px 1750px #FFF, 1850px 150px #FFF, 150px 1850px #FFF, 1950px 50px #FFF, 50px 1950px #FFF, 200px 300px #FFF, 400px 500px #FFF, 600px 700px #FFF, 800px 900px #FFF, 1000px 1100px #FFF, 1200px 1300px #FFF, 1400px 1500px #FFF, 1600px 1700px #FFF, 1800px 1900px #FFF, 2000px 100px #FFF, 100px 2000px #FFF, 300px 1700px #FFF, 500px 1500px #FFF, 700px 1300px #FFF, 900px 1100px #FFF, 1100px 900px #FFF, 1300px 700px #FFF, 1500px 500px #FFF, 1700px 300px #FFF, 1900px 100px #FFF, 50px 1950px #FFF, 1950px 50px #FFF, 1750px 250px #FFF, 1550px 450px #FFF, 1350px 650px #FFF, 1150px 850px #FFF, 950px 1050px #FFF, 750px 1250px #FFF, 550px 1450px #FFF, 350px 1650px #FFF, 150px 1850px #FFF;
-  animation: animStar 50s linear infinite;
-}
-#stars:after {
-  content: " ";
-  position: absolute;
-  top: 2000px;
-  width: 1px;
-  height: 1px;
-  background: transparent;
-  box-shadow: inherit;
-}
-
-#stars2 {
-  width: 2px;
-  height: 2px;
-  background: transparent;
-  box-shadow: 234px 890px #FFF, 890px 234px #FFF, 456px 1234px #FFF, 1500px 1000px #FFF, 1000px 1500px #FFF, 800px 1200px #FFF, 1200px 800px #FFF, 600px 1400px #FFF, 1400px 600px #FFF, 400px 1600px #FFF, 1600px 400px #FFF, 200px 1800px #FFF, 1800px 200px #FFF, 100px 1900px #FFF, 1900px 100px #FFF, 300px 1700px #FFF, 1700px 300px #FFF, 500px 1500px #FFF, 1500px 500px #FFF, 700px 1300px #FFF, 1300px 700px #FFF, 900px 1100px #FFF, 1100px 900px #FFF, 1050px 950px #FFF, 950px 1050px #FFF, 1150px 850px #FFF, 850px 1150px #FFF, 1250px 750px #FFF, 750px 1250px #FFF, 1350px 650px #FFF, 650px 1350px #FFF, 1450px 550px #FFF, 550px 1450px #FFF, 1550px 450px #FFF, 450px 1550px #FFF, 1650px 350px #FFF, 350px 1650px #FFF, 1750px 250px #FFF, 250px 1750px #FFF, 1850px 150px #FFF, 150px 1850px #FFF, 1950px 50px #FFF, 50px 1950px #FFF, 200px 400px #FFF, 400px 600px #FFF, 600px 800px #FFF, 800px 1000px #FFF, 1000px 1200px #FFF, 1200px 1400px #FFF, 1400px 1600px #FFF, 1600px 1800px #FFF, 1800px 2000px #FFF, 2000px 200px #FFF, 200px 2000px #FFF, 400px 1800px #FFF, 600px 1600px #FFF, 800px 1400px #FFF, 1000px 1200px #FFF, 1200px 1000px #FFF, 1400px 800px #FFF, 1600px 600px #FFF, 1800px 400px #FFF, 2000px 200px #FFF, 50px 1950px #FFF, 1950px 50px #FFF, 1750px 250px #FFF, 1550px 450px #FFF, 1350px 650px #FFF, 1150px 850px #FFF, 950px 1050px #FFF, 750px 1250px #FFF, 550px 1450px #FFF, 350px 1650px #FFF, 150px 1850px #FFF;
-  animation: animStar 100s linear infinite;
-}
-#stars2:after {
-  content: " ";
-  position: absolute;
-  top: 2000px;
-  width: 2px;
-  height: 2px;
-  background: transparent;
-  box-shadow: inherit;
-}
-
-#stars3 {
-  width: 3px;
-  height: 3px;
-  background: transparent;
-  box-shadow: 345px 1234px #FFF, 1234px 345px #FFF, 789px 456px #FFF, 500px 500px #FFF, 200px 1800px #FFF, 1800px 200px #FFF, 100px 100px #FFF, 1900px 1900px #FFF, 300px 300px #FFF, 1700px 1700px #FFF, 400px 400px #FFF, 1600px 1600px #FFF, 500px 1500px #FFF, 1500px 500px #FFF, 600px 1400px #FFF, 1400px 600px #FFF, 700px 1300px #FFF, 1300px 700px #FFF, 800px 1200px #FFF, 1200px 800px #FFF, 900px 1100px #FFF, 1100px 900px #FFF, 1000px 1000px #FFF, 1050px 950px #FFF, 950px 1050px #FFF, 1150px 850px #FFF, 850px 1150px #FFF, 1250px 750px #FFF, 750px 1250px #FFF, 1350px 650px #FFF, 650px 1350px #FFF, 1450px 550px #FFF, 550px 1450px #FFF, 1550px 450px #FFF, 450px 1550px #FFF, 1650px 350px #FFF, 350px 1650px #FFF, 1750px 250px #FFF, 250px 1750px #FFF, 1850px 150px #FFF, 150px 1850px #FFF, 1950px 50px #FFF, 50px 1950px #FFF, 200px 600px #FFF, 400px 800px #FFF, 600px 1000px #FFF, 800px 1200px #FFF, 1000px 1400px #FFF, 1200px 1600px #FFF, 1400px 1800px #FFF, 1600px 2000px #FFF, 1800px 200px #FFF, 200px 1800px #FFF, 400px 1600px #FFF, 600px 1400px #FFF, 800px 1200px #FFF, 1000px 1000px #FFF, 1200px 800px #FFF, 1400px 600px #FFF, 1600px 400px #FFF, 1800px 200px #FFF, 50px 1950px #FFF, 1950px 50px #FFF, 1750px 250px #FFF, 1550px 450px #FFF, 1350px 650px #FFF, 1150px 850px #FFF, 950px 1050px #FFF, 750px 1250px #FFF, 550px 1450px #FFF, 350px 1650px #FFF, 150px 1850px #FFF;
-  animation: animStar 150s linear infinite;
-}
-#stars3:after {
-  content: " ";
-  position: absolute;
-  top: 2000px;
-  width: 3px;
-  height: 3px;
-  background: transparent;
-  box-shadow: inherit;
+/* Tablet-specific fog fixes */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .fogwrapper {
+    -webkit-filter: blur(2px) grayscale(0.3) saturate(1.1) sepia(0.1);
+    filter: blur(2px) grayscale(0.3) saturate(1.1) sepia(0.1);
+  }
+  
+  #foglayer_01 .image01, #foglayer_01 .image02,
+  #foglayer_02 .image01, #foglayer_02 .image02,
+  #foglayer_03 .image01, #foglayer_03 .image02 {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+  }
+  
+  #foglayer_01, #foglayer_02, #foglayer_03 {
+    width: 300%;
+  }
 }
