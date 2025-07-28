@@ -53,20 +53,20 @@ const projects = [
 
 export default function ProjectsSection() {
   return (
-    <section className="relative w-full min-h-screen flex flex-col justify-center items-center py-6 sm:py-18 lg:py-18 px-10 sm:px-10 md:px-0 pb-6 sm:pb-16 overflow-hidden bg-gradient-to-br from-[#0a1a2f] to-[#0a1622] scroll-mt-20 sm:scroll-mt-0" id="projects">
+    <section className="relative w-full min-h-screen flex flex-col justify-center items-center py-3 sm:py-18 lg:py-18 px-4 sm:px-10 md:px-0 pb-2 sm:pb-16 overflow-hidden bg-gradient-to-br from-[#0a1a2f] to-[#0a1622] scroll-mt-20 sm:scroll-mt-0" id="projects">
       {/* Gradient background overlay */}
       <div className="absolute inset-0 bg-gradient-to-br from-[#0a0a0a] via-[#1a1a1a] to-blue-900 opacity-90 -z-10" />
       <div className="absolute inset-0 pointer-events-none -z-10" style={{background: "radial-gradient(ellipse at top right, #3b82f6 0%, transparent 70%)"}} />
       <div className="max-w-5xl w-full mx-auto flex flex-col items-center relative z-10">
-        <h1 className="text-xl sm:text-4xl md:text-5xl font-extrabold mb-6 tracking-tight text-center whitespace-nowrap mt-4 sm:mt-0">
+        <h2 className="text-xl sm:text-4xl md:text-5xl font-extrabold mb-3 tracking-tight text-center whitespace-nowrap mt-2 sm:mt-0">
           My Previous <span className="text-blue-500">Work</span>
-        </h1>
-        <h2 className="text-base sm:text-base md:text-xl text-blue-300 mb-12 max-w-3xl text-center font-medium">
+        </h2>
+        <h2 className="text-base sm:text-base md:text-xl text-blue-300 mb-8 max-w-3xl text-center font-medium">
           From viral memes to brand campaigns, here&apos;s how I&apos;ve helped brands connect with millions of users.
         </h2>
         {/* Pure CSS Show More Projects Toggle */}
         <input type="checkbox" id="show-more-projects" className="peer hidden" />
-        <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
+        <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-8 items-stretch">
           {projects.slice(0, 3).map((project, idx) => (
             <div key={idx} className="bg-[#101828] rounded-2xl shadow-2xl p-6 flex flex-col h-full border border-blue-900/40">
               <div className="w-full aspect-[9/12] rounded-xl overflow-hidden mb-4 flex items-center justify-center bg-black">

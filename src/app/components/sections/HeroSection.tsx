@@ -6,7 +6,7 @@ export default function HeroSection() {
   return (
     <section
       id="home"
-      className="section-hero min-h-screen w-full flex items-center justify-center pt-28 px-10 sm:px-10 md:px-8 pb-6 sm:pb-16 relative overflow-hidden bg-fixed"
+      className="section-hero min-h-screen w-full flex items-center justify-center pt-24 px-4 sm:px-10 md:px-8 pb-2 sm:pb-16 relative overflow-hidden bg-fixed"
       role="banner"
       aria-label="Hero Section"
       style={{
@@ -32,13 +32,13 @@ export default function HeroSection() {
         <div className="grid lg:grid-cols-2 gap-2 sm:gap-8 lg:gap-16 items-center w-full">
           {/* Left Content */}
           <div className="space-y-4 sm:space-y-8 lg:space-y-10 text-center lg:text-left order-2 lg:order-1 lg:-mt-12">
-            <h1 className="font-bold">
+            <h1 className="font-bold mt-0 md:mt-12">
               <span className="block text-base sm:text-xl font-medium mb-1">Meet the Guy Behind</span>
               <span className="block text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold leading-tight">Sagar Edits</span>
-              <span className="block text-lg sm:text-2xl font-semibold mt-2">
-                Hi, I&apos;m Sagar Singh – <span className="text-blue-400">viral content creator, video editor, and social media strategist.</span>
-              </span>
             </h1>
+            <h2 className="block text-lg sm:text-2xl font-semibold mt-2">
+              Hi, I&apos;m Sagar Singh – <span className="text-blue-400">viral content creator, video editor, and social media strategist.</span>
+            </h2>
             {/* Social Stats */}
             <nav className="flex flex-col sm:gap-4 justify-center lg:justify-start px-2 sm:px-0 sm:flex-col gap-3" aria-label="Social Media Profiles">
               <div className="flex flex-row gap-2 sm:flex-col sm:gap-4 w-full">

@@ -3,19 +3,19 @@ import ContactForm from "./ContactForm";
 
 export default function ContactSection() {
   return (
-    <section className="relative w-full min-h-screen flex flex-col justify-center items-center py-6 sm:py-16 px-10 sm:px-10 md:px-0 pb-6 sm:pb-16 overflow-hidden bg-gradient-to-br from-[#0a232e] to-[#08222b]" id="contact">
+    <section className="relative w-full min-h-screen flex flex-col justify-center items-center py-3 sm:py-16 px-4 sm:px-10 md:px-0 pb-2 sm:pb-16 overflow-hidden bg-gradient-to-br from-[#0a232e] to-[#08222b]" id="contact">
       <div className="absolute inset-0 bg-[#0a223a] -z-10" />
       <div className="w-full max-w-6xl mx-auto flex flex-col items-center relative z-10 md:px-0 md:mx-auto">
         {/* Heading and Subtitle */}
-        <h1 className="text-xl sm:text-5xl font-extrabold mb-2 text-center tracking-tight whitespace-nowrap mt-4 sm:mt-0">
+        <h2 className="text-xl sm:text-5xl font-extrabold mb-1 text-center tracking-tight whitespace-nowrap mt-2 sm:mt-0">
           <span className="text-white">Let&apos;s </span>
           <span className="bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent">Connect</span>
-        </h1>
-        <p className="text-base sm:text-lg text-blue-300 mb-8 max-w-2xl text-center font-medium">
+        </h2>
+        <p className="text-base sm:text-lg text-blue-300 mb-4 max-w-2xl text-center font-medium">
           Reach out for collaborations, business inquiries, or just to say hi!
         </p>
         {/* Two-column layout */}
-        <div className="w-full flex flex-col-reverse md:flex-row gap-6 sm:gap-10 md:gap-8 items-start justify-center">
+        <div className="w-full flex flex-col-reverse md:flex-row gap-3 sm:gap-10 md:gap-8 items-start justify-center">
           {/* Left: Contact Form */}
           <div className="flex-1 w-full max-w-lg">
             <h3 className="text-base sm:text-2xl font-extrabold mb-4 sm:mb-6 text-white text-center sm:text-left">

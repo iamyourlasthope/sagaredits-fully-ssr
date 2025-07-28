@@ -11,12 +11,12 @@ const skills = [
 
 const AboutSection = () => {
   return (
-    <section id="about" className="py-6 sm:py-18 lg:py-18 px-10 sm:px-6 pb-6 relative z-10" role="region" aria-labelledby="about-heading">
+    <section id="about" className="py-3 sm:py-18 lg:py-18 px-4 sm:px-6 pb-2 relative z-10" role="region" aria-labelledby="about-heading">
       <div className="container mx-auto">
-        <header className="text-center mb-10 sm:mb-12 lg:mb-16">
-          <h1 id="about-heading" className="text-xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-center mb-2 whitespace-nowrap mt-4 sm:mt-0">
+        <header className="text-center mb-6 sm:mb-12 lg:mb-16">
+          <h2 id="about-heading" className="text-xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-center mb-2 whitespace-nowrap mt-4 sm:mt-0">
             About <span className="text-blue-500">Me</span>
-          </h1>
+          </h2>
           <div className="max-w-4xl mx-auto px-2 sm:px-0">
             <h2 className="text-base sm:text-lg lg:text-xl text-blue-200 leading-relaxed">
               Experienced digital content creator with over <span className="text-blue-400 font-semibold">5 years of expertise</span> in video editing and social media management. Successfully grew Instagram and YouTube to <span className="text-blue-400 font-semibold">100K+ each</span>, and collaborated on promo campaigns for <span className="text-blue-400 font-semibold">Amazon Prime, Mini TV</span>, and more.
@@ -24,7 +24,7 @@ const AboutSection = () => {
           </div>
         </header>
 
-        <div className="grid lg:grid-cols-2 gap-8 sm:gap-10 lg:gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-4 sm:gap-10 lg:gap-12 items-center">
           {/* Animated Image - Mobile First */}
           <div className="flex justify-center order-1">
             <div className="relative">
@@ -45,7 +45,7 @@ const AboutSection = () => {
           </div>
 
           {/* Skills - Mobile Optimized */}
-          <div className="space-y-6 sm:space-y-8 order-2 lg:order-2 px-2 sm:px-0">
+          <div className="space-y-3 sm:space-y-8 order-2 lg:order-2 px-2 sm:px-0">
             <h2 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6 text-center lg:text-left">Skills & Expertise</h2>
             <ul className="space-y-3 sm:space-y-4" role="list">
               {skills.map((skill, index) => (

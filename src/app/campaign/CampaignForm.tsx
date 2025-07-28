@@ -84,7 +84,7 @@ export default function CampaignForm({ onSuccess }: CampaignFormProps) {
         </button>
       </div>
       <div className="mb-8 text-center">
-        <h1 className="text-3xl sm:text-4xl font-extrabold mb-3 text-blue-600 dark:text-blue-400 tracking-tight">Start Your Campaign</h1>
+        <h2 className="text-3xl sm:text-4xl font-extrabold mb-3 text-blue-600 dark:text-blue-400 tracking-tight">Start Your Campaign</h2>
         <p className="text-base sm:text-lg text-gray-600 dark:text-blue-100 font-medium max-w-md mx-auto">Ready to grow your brand? Fill out the form below, and let&apos;s create something amazing together!</p>
       </div>
       {/* Icon cards row */}

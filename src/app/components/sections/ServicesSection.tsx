@@ -4,22 +4,22 @@ import Image from "next/image";
 
 export default function ServicesSection() {
   return (
-    <section className="relative w-full min-h-screen flex flex-col justify-center items-center py-6 sm:py-18 lg:py-18 px-10 sm:px-10 md:px-0 pb-6 sm:pb-16 overflow-hidden bg-gradient-to-br from-[#0a232e] to-[#08222b] scroll-mt-20 sm:scroll-mt-0" id="services">
+    <section className="relative w-full min-h-screen flex flex-col justify-center items-center py-3 sm:py-18 lg:py-18 px-4 sm:px-10 md:px-0 pb-2 sm:pb-16 overflow-hidden bg-gradient-to-br from-[#0a232e] to-[#08222b] scroll-mt-20 sm:scroll-mt-0" id="services">
       {/* Gradient background overlay */}
       <div className="absolute inset-0 bg-gradient-to-br from-[#0a0a0a] via-[#1a1a1a] to-blue-900 opacity-90 -z-10" />
       <div className="absolute inset-0 pointer-events-none -z-10" style={{background: "radial-gradient(ellipse at top right, #3b82f6 0%, transparent 70%)"}} />
-      <div className="max-w-6xl w-full mx-auto flex flex-col gap-6 relative z-10">
+      <div className="max-w-6xl w-full mx-auto flex flex-col gap-3 sm:gap-6 relative z-10">
         {/* Heading and Subtitle */}
-        <div className="flex flex-col items-center mb-2">
-          <h1 className="text-xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-center mb-2 whitespace-nowrap mt-4 sm:mt-0">
+        <div className="flex flex-col items-center mb-1 sm:mb-2">
+          <h2 className="text-xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-center mb-2 whitespace-nowrap mt-4 sm:mt-0">
             My <span className="text-blue-500">Services</span>
-          </h1>
+          </h2>
           <h2 className="text-base sm:text-base md:text-xl text-blue-200 text-center mb-6 max-w-2xl">
             Let&apos;s create content that resonates, engages, and converts your audience.
           </h2>
         </div>
         {/* Main Service Card */}
-        <div className="flex flex-col md:flex-row items-center bg-[#101828] border border-blue-400/80 rounded-2xl shadow-2xl p-8 gap-8 mb-4 relative">
+        <div className="flex flex-col md:flex-row items-center bg-[#101828] border border-blue-400/80 rounded-2xl shadow-2xl p-4 sm:p-8 gap-4 sm:gap-8 mb-2 sm:mb-4 relative">
           {/* Most Popular Badge */}
           <span className="badge-bounce absolute -top-5 left-1/2 -translate-x-1/2 bg-blue-500 text-white text-sm font-bold px-6 py-1 rounded-full shadow border-2 border-blue-300 z-20" style={{letterSpacing: '0.5px'}}>Most Popular</span>
           {/* Image on top for mobile, right for desktop */}
@@ -43,7 +43,7 @@ export default function ServicesSection() {
           </div>
         </div>
         {/* Other Services */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-6">
           <div className="bg-[#101828] border border-blue-700/40 rounded-2xl shadow-xl p-6 flex flex-col gap-3">
             <div className="flex items-center gap-2 mb-2"><Video className="w-6 h-6 text-blue-400" /><h2 className="text-xl font-bold text-white">Video Editing</h2></div>
             <h3 className="text-blue-200 text-base">Professional video editing with Adobe Premiere Pro and After Effects for your brand content and campaigns.</h3>
