@@ -6,6 +6,7 @@ const navItems = [
   { name: "Home", section: "home" },
   { name: "Merch", section: "merch" },
   { name: "About", section: "about" },
+  { name: "Articles", section: "articles" },
   { name: "Contact", section: "contact" },
   { name: "View My Work", section: "projects" },
   { name: "Promote Your Brand", section: "services" },

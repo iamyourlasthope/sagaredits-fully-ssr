@@ -3,7 +3,7 @@ import { ShoppingBag } from "lucide-react";
 
 export default function MerchSection() {
   return (
-    <section className="relative w-full min-h-screen flex flex-col justify-center items-center py-3 sm:py-16 px-4 sm:px-10 md:px-0 pb-2 sm:pb-16 overflow-hidden" style={{ backgroundColor: '#223b3b' }} id="merch">
+    <section className="relative w-full min-h-screen flex flex-col justify-center items-center py-8 sm:py-12 md:py-16 lg:py-20 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 overflow-hidden" style={{ backgroundColor: '#223b3b' }} id="merch">
       {/* Gradient background overlay */}
       <div className="absolute inset-0 bg-gradient-to-br from-[#0a0a0a] via-[#1a1a1a] to-blue-900 opacity-90 -z-10" />
       <div className="absolute inset-0 pointer-events-none -z-10" style={{background: "radial-gradient(ellipse at top right, #3b82f6 0%, transparent 70%)"}} />

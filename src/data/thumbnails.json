@@ -1,0 +1,44 @@
+[
+  {
+    "index": 0,
+    "filename": "article-1.webp",
+    "url": "/images/thumbnails/article-1.webp",
+    "success": true
+  },
+  {
+    "index": 1,
+    "filename": "article-2.webp",
+    "url": "/images/thumbnails/article-2.webp",
+    "success": true
+  },
+  {
+    "index": 2,
+    "filename": "article-3.webp",
+    "url": "/images/thumbnails/article-3.webp",
+    "success": true
+  },
+  {
+    "index": 3,
+    "filename": "article-4.webp",
+    "url": "/images/thumbnails/article-4.webp",
+    "success": true
+  },
+  {
+    "index": 4,
+    "filename": "article-5.webp",
+    "url": "/images/thumbnails/article-5.webp",
+    "success": true
+  },
+  {
+    "index": 5,
+    "filename": "article-6.webp",
+    "url": "/images/thumbnails/article-6.webp",
+    "success": true
+  },
+  {
+    "index": 6,
+    "filename": "article-7.webp",
+    "url": "/images/thumbnails/article-7.webp",
+    "success": true
+  }
+] 
