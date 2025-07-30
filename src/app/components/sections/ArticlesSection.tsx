@@ -67,7 +67,7 @@ export default function ArticlesSection() {
   return (
     <section
       id="articles"
-      className="section-articles w-full py-8 sm:py-12 md:py-16 lg:py-20 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 relative overflow-hidden"
+      className="section-articles w-full py-8 sm:py-12 md:py-16 lg:py-12 xl:py-16 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 relative overflow-hidden"
       role="region"
       aria-label="Latest Articles on Our Work"
       style={{

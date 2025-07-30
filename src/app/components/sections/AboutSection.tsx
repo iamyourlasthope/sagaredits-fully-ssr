@@ -11,7 +11,7 @@ const skills = [
 
 const AboutSection = () => {
   return (
-    <section id="about" className="py-8 sm:py-12 md:py-16 lg:py-20 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 relative z-10" role="region" aria-labelledby="about-heading">
+    <section id="about" className="py-8 sm:py-12 md:py-16 lg:py-12 xl:py-16 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 relative z-10" role="region" aria-labelledby="about-heading">
       <div className="container mx-auto">
         <header className="text-center mb-6 sm:mb-12 lg:mb-16">
           <h2 id="about-heading" className="text-xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-center mb-2 whitespace-nowrap mt-4 sm:mt-0">

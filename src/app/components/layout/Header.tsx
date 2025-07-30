@@ -3,7 +3,7 @@ import MobileMenu from "./MobileMenu";
 export default function Header() {
   return (
     <nav className="fixed top-0 w-full z-50 transition-all duration-300 bg-gray-900/80 backdrop-blur-md border-b border-blue-400/20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 py-3 sm:py-4 md:py-2">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 py-3 sm:py-4 md:py-2 lg:py-3">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <a
