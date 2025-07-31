@@ -11,16 +11,16 @@ interface Article {
 
 const articles: Article[] = [
   {
-    title: "Madhuri Dixit and Aishwarya Rai Bachchan Dance on Megan Thee Stallion's 'Mamushi' - Internet is Loving the Viral Video",
-    description: "A viral video featuring Bollywood stars dancing to Megan Thee Stallion's hit song has taken the internet by storm.",
-    url: "https://www.thedailyjagran.com/viral/madhuri-dixit-and-aishwarya-rai-bachchan-dance-on-megan-thee-stallion-mamushi-internet-is-loving-the-viral-video-10175679",
-    source: "The Daily Jagran"
-  },
-  {
     title: "Hera Pheri's Dramatic Raju on Indian Idol Mashup Goes Viral - Netizens Say 'Neha Kakkar Be Like Chaalis Laat'",
     description: "A hilarious mashup combining Hera Pheri's iconic scene with Indian Idol has become the latest viral sensation.",
     url: "https://www.koimoi.com/bollywood-news/hera-pheris-dramatic-raju-on-indian-idol-mashup-goes-viral-netizens-say-neha-kakkar-be-like-chaalis-laat/",
     source: "Koimoi"
+  },
+  {
+    title: "Madhuri Dixit and Aishwarya Rai Bachchan Dance on Megan Thee Stallion's 'Mamushi' - Internet is Loving the Viral Video",
+    description: "A viral video featuring Bollywood stars dancing to Megan Thee Stallion's hit song has taken the internet by storm.",
+    url: "https://www.thedailyjagran.com/viral/madhuri-dixit-and-aishwarya-rai-bachchan-dance-on-megan-thee-stallion-mamushi-internet-is-loving-the-viral-video-10175679",
+    source: "The Daily Jagran"
   },
   {
     title: "Must Watch: Nine Cover Versions of Qala's 'Ghodey Pe Sawaar' Trending on Instagram",
@@ -86,8 +86,31 @@ export default function ArticlesSection() {
           </p>
         </div>
 
-        {/* Interactive Carousel Component */}
-        <ArticlesCarousel articles={articlesWithThumbnails} />
+        {/* Container Box for Articles */}
+        <div className="relative w-full max-w-6xl mx-auto">
+          {/* Main Container Box */}
+          <div className="relative bg-gradient-to-br from-[#0a1a2f] to-[#0a1622] border border-blue-400/30 rounded-3xl shadow-2xl overflow-hidden">
+            {/* Box Header */}
+            <div className="bg-gradient-to-r from-blue-600/20 to-purple-600/20 border-b border-blue-400/20 px-6 py-4">
+              <div className="flex items-center justify-between">
+                <h3 className="text-lg sm:text-xl font-semibold text-white">
+                  Latest Articles & Features
+                </h3>
+                <div className="flex items-center gap-2">
+                  <div className="w-2 h-2 bg-blue-400 rounded-full animate-pulse"></div>
+                  <div className="w-2 h-2 bg-purple-400 rounded-full animate-pulse" style={{animationDelay: '0.5s'}}></div>
+                  <div className="w-2 h-2 bg-blue-400 rounded-full animate-pulse" style={{animationDelay: '1s'}}></div>
+                </div>
+              </div>
+            </div>
+            
+            {/* Carousel Container with Padding */}
+            <div className="px-0 py-6 sm:py-8">
+              <ArticlesCarousel articles={articlesWithThumbnails} />
+            </div>
+            
+          </div>
+        </div>
       </div>
     </section>
   );

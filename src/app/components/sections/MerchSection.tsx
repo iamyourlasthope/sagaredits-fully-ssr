@@ -3,12 +3,17 @@ import { ShoppingBag } from "lucide-react";
 
 export default function MerchSection() {
   return (
-    <section className="relative w-full min-h-screen flex flex-col justify-center items-center py-8 sm:py-12 md:py-16 lg:py-12 xl:py-16 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 overflow-hidden" style={{ backgroundColor: '#223b3b' }} id="merch">
+    <section className="relative w-full flex flex-col justify-center items-center py-8 sm:py-12 md:py-16 lg:py-12 xl:py-16 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 overflow-hidden" style={{ backgroundColor: '#223b3b' }} id="merch">
       {/* Gradient background overlay */}
       <div className="absolute inset-0 bg-gradient-to-br from-[#0a0a0a] via-[#1a1a1a] to-blue-900 opacity-90 -z-10" />
       <div className="absolute inset-0 pointer-events-none -z-10" style={{background: "radial-gradient(ellipse at top right, #3b82f6 0%, transparent 70%)"}} />
       <div className="max-w-4xl w-full mx-auto flex flex-col items-center relative z-10">
-        <h2 className="text-xl sm:text-4xl md:text-5xl font-extrabold mb-2 tracking-tight text-center whitespace-nowrap mt-2 sm:mt-0">Merch</h2>
+        <h2 className="text-xl sm:text-4xl md:text-5xl font-extrabold mb-4 tracking-tight text-center whitespace-nowrap mt-2 sm:mt-0">
+          Our <span className="text-blue-400">Merch</span>
+        </h2>
+        <p className="text-base sm:text-lg md:text-xl text-blue-300 mb-8 sm:mb-12 max-w-2xl text-center font-medium">
+          Full on meme drip, zero cap. Merch loading… stay tuned, squad!
+        </p>
         <div className="w-full max-w-md mx-auto bg-[#101828] border border-blue-900/40 rounded-2xl shadow-2xl px-2 py-4 sm:px-12 sm:py-12 flex flex-col items-center text-center gap-4 md:max-w-4xl md:flex-row md:items-center md:text-left md:gap-12 md:bg-[#101828] md:border md:border-blue-900/40 md:rounded-2xl md:shadow-2xl">
           {/* Right: Coming Soon (text first on mobile, left on desktop) */}
           <div className="flex-1 flex flex-col items-center md:items-start text-center md:text-left gap-5 min-w-[160px] min-h-[160px] md:min-w-[320px] md:min-h-[320px] justify-center order-1 md:order-2">

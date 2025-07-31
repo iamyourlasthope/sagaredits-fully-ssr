@@ -53,7 +53,7 @@ const projects = [
 
 export default function ProjectsSection() {
   return (
-    <section className="relative w-full min-h-screen flex flex-col justify-center items-center py-8 sm:py-12 md:py-16 lg:py-12 xl:py-16 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 overflow-hidden bg-gradient-to-br from-[#0a1a2f] to-[#0a1622] scroll-mt-20 sm:scroll-mt-0" id="projects">
+    <section className="relative w-full flex flex-col justify-center items-center py-8 sm:py-12 md:py-16 lg:py-12 xl:py-16 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 overflow-hidden bg-gradient-to-br from-[#0a1a2f] to-[#0a1622] scroll-mt-20 sm:scroll-mt-0" id="projects">
       {/* Gradient background overlay */}
       <div className="absolute inset-0 bg-gradient-to-br from-[#0a0a0a] via-[#1a1a1a] to-blue-900 opacity-90 -z-10" />
       <div className="absolute inset-0 pointer-events-none -z-10" style={{background: "radial-gradient(ellipse at top right, #3b82f6 0%, transparent 70%)"}} />

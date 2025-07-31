@@ -3,7 +3,7 @@ import ContactForm from "./ContactForm";
 
 export default function ContactSection() {
   return (
-    <section className="relative w-full min-h-screen flex flex-col justify-center items-center py-8 sm:py-12 md:py-16 lg:py-12 xl:py-16 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 overflow-hidden bg-gradient-to-br from-[#0a232e] to-[#08222b]" id="contact">
+    <section className="relative w-full flex flex-col justify-center items-center py-8 sm:py-12 md:py-16 lg:py-12 xl:py-16 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 overflow-hidden bg-gradient-to-br from-[#0a232e] to-[#08222b]" id="contact">
       <div className="absolute inset-0 bg-[#0a223a] -z-10" />
       <div className="w-full max-w-6xl mx-auto flex flex-col items-center relative z-10 md:px-0 md:mx-auto">
         {/* Heading and Subtitle */}
