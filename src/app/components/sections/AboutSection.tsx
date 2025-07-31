@@ -37,10 +37,6 @@ const AboutSection = () => {
                 loading="lazy"
                 style={{ transform: 'rotate(3deg)' }}
               />
-              {/* Modern floating elements - Responsive */}
-              <div className="absolute -top-2 -right-2 sm:-top-3 sm:-right-3 lg:-top-4 lg:-right-4 w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8 bg-blue-500/70 rounded-full animate-pulse shadow-lg"></div>
-              <div className="absolute -bottom-2 -left-2 sm:-bottom-3 sm:-left-3 lg:-bottom-4 lg:-left-4 w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6 bg-blue-400 rounded-full animate-pulse delay-1000 shadow-lg"></div>
-              <div className="absolute top-1/2 -left-4 sm:-left-6 lg:-left-8 w-3 h-3 sm:w-3.5 sm:h-3.5 lg:w-4 lg:h-4 bg-blue-500/50 rounded-full animate-pulse delay-500 shadow-lg"></div>
             </div>
           </div>
 

@@ -2,7 +2,7 @@
 
 import { ExternalLink, ChevronLeft, ChevronRight } from "lucide-react";
 import Image from "next/image";
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect, useCallback } from "react";
 
 interface Article {
   title: string;
@@ -44,17 +44,28 @@ export default function ArticlesCarousel({ articles }: ArticlesCarouselProps) {
   const totalDots = Math.max(1, articles.length - visibleCardsCount + 1);
   const maxIndex = Math.max(0, articles.length - visibleCardsCount);
 
-  const scrollToIndex = (index: number) => {
+  const scrollToIndex = useCallback((index: number) => {
     if (carouselRef.current) {
       const cardWidth = 300 + 32; // card width + gap
-      const scrollPosition = index * cardWidth;
+      const containerWidth = carouselRef.current.clientWidth;
+      
+      // Calculate the ideal scroll position
+      let scrollPosition = index * cardWidth;
+      
+      // If this is the last position, adjust to show the last card properly
+      if (index === maxIndex && articles.length > visibleCardsCount) {
+        // Calculate how much space should be on the right
+        const lastCardStart = (articles.length - 1) * cardWidth;
+        scrollPosition = Math.max(0, lastCardStart - (containerWidth - cardWidth));
+      }
+      
       carouselRef.current.scrollTo({
         left: scrollPosition,
         behavior: 'smooth'
       });
       setCurrentIndex(index);
     }
-  };
+  }, [maxIndex, articles.length, visibleCardsCount]);
 
   const scrollNext = () => {
     const nextIndex = Math.min(currentIndex + 1, maxIndex);
@@ -74,7 +85,7 @@ export default function ArticlesCarousel({ articles }: ArticlesCarouselProps) {
     }, 5000);
 
     return () => clearInterval(interval);
-  }, [currentIndex, maxIndex, articles.length]);
+  }, [currentIndex, maxIndex, scrollToIndex]);
 
   // Update current index based on scroll position
   useEffect(() => {
@@ -135,7 +146,7 @@ export default function ArticlesCarousel({ articles }: ArticlesCarouselProps) {
             </div>
 
             {/* Source Badge */}
-            <div className="article-source">
+            <div className="article-source" data-source={article.source}>
               {article.source}
             </div>
           </div>

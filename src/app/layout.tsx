@@ -18,8 +18,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Sagar Edits – Meme Marketer & Digital Creator",
-  description: "Professional portfolio of Sagar Edits – Meme Marketer & Digital Creator. Expert in meme marketing, content creation, and digital strategy.",
-  keywords: ["meme marketing", "digital creator", "content creation", "social media", "marketing", "Sagar Edits"],
+  description: "Meme Marketing Expert & Digital Creator | 100K+ Instagram Followers & 100K+ YouTube Subscribers | Specializing in Viral Content, Digital Strategy & Brand Growth",
+  keywords: ["meme marketing", "digital creator", "content creation", "social media", "marketing", "Sagar Edits", "Sagar Edits Instagram", "Sagar Edits YouTube", "Sagar Edits memer", "meme marketing expert", "digital creator", "viral content", "brand growth", "start your campaign", "paid promotion", "promos India", "content creation", "social media marketing", "reels creator", "video promotion", "online branding"],
   authors: [{ name: "Sagar Edits" }],
   creator: "Sagar Edits",
   publisher: "Sagar Edits",
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     url: "https://www.sagaredits.in",
     siteName: "Sagar Edits",
     title: "Sagar Edits – Meme Marketer & Digital Creator",
-    description: "Professional portfolio of Sagar Edits – Meme Marketer & Digital Creator. Expert in meme marketing, content creation, and digital strategy.",
+    description: "Meme Marketing Expert & Digital Creator | 100K+ Instagram Followers & 100K+ YouTube Subscribers | Specializing in Viral Content, Digital Strategy & Brand Growth",
     images: [
       {
         url: "https://www.sagaredits.in/android-chrome-512x512.png",
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Sagar Edits – Meme Marketer & Digital Creator",
-    description: "Professional portfolio of Sagar Edits – Meme Marketer & Digital Creator. Expert in meme marketing, content creation, and digital strategy.",
+    description: "Meme Marketing Expert & Digital Creator | 100K+ Instagram Followers & 100K+ YouTube Subscribers | Specializing in Viral Content, Digital Strategy & Brand Growth",
     images: ["https://www.sagaredits.in/android-chrome-512x512.png"],
     creator: "@sagaredits",
     site: "@sagaredits",

@@ -6,7 +6,7 @@ export default function HeroSection() {
   return (
     <section
       id="home"
-      className="section-hero w-full flex items-center justify-center pt-20 sm:pt-24 md:pt-20 lg:pt-24 pb-8 sm:pb-12 md:pb-16 lg:pb-12 xl:pb-16 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 relative overflow-hidden bg-fixed"
+      className="section-hero w-full flex items-center justify-center pt-28 sm:pt-28 md:pt-28 lg:pt-24 pb-8 sm:pb-12 md:pb-16 lg:pb-12 xl:pb-16 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 relative overflow-hidden bg-fixed"
       role="banner"
       aria-label="Hero Section"
       style={{
