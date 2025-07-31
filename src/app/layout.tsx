@@ -5,6 +5,7 @@ import Header from "./components/layout/Header";
 import Footer from "./components/layout/Footer";
 import Script from "next/script";
 import { Analytics } from "@vercel/analytics/next";
+import { Suspense } from "react";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -103,7 +104,11 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {/* Google Analytics */}
+        <Header />
+        {children}
+        <Footer />
+        
+        {/* Google Analytics - Load after page is interactive */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-G0Z9GK9303"
           strategy="afterInteractive"
@@ -116,10 +121,10 @@ export default function RootLayout({
             gtag('config', 'G-G0Z9GK9303');
           `}
         </Script>
-        <Header />
-        {children}
-        <Footer />
-        <Analytics />
+        
+        <Suspense fallback={null}>
+          <Analytics />
+        </Suspense>
       </body>
     </html>
   );

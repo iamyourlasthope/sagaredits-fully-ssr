@@ -2,7 +2,7 @@
 
 import { ExternalLink, ChevronLeft, ChevronRight } from "lucide-react";
 import Image from "next/image";
-import { useState, useRef, useEffect, useCallback } from "react";
+import { useState, useRef, useEffect, useCallback, Suspense } from "react";
 
 interface Article {
   title: string;
@@ -113,13 +113,22 @@ export default function ArticlesCarousel({ articles }: ArticlesCarouselProps) {
           <div key={index} className="article-card">
             {/* Article Image */}
             {article.thumbnail ? (
-              <Image
-                src={article.thumbnail}
-                alt={article.title}
-                width={300}
-                height={200}
-                className="w-full h-auto"
-              />
+              <Suspense fallback={
+                <div className="w-full h-[200px] bg-gradient-to-br from-blue-600 to-purple-600 flex items-center justify-center">
+                  <span className="text-white text-lg font-semibold">Loading...</span>
+                </div>
+              }>
+                <Image
+                  src={article.thumbnail}
+                  alt={article.title}
+                  width={300}
+                  height={200}
+                  className="w-full h-auto"
+                  loading="lazy"
+                  placeholder="blur"
+                  blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCdABmX/9k="
+                />
+              </Suspense>
             ) : (
               <div className="w-full h-[200px] bg-gradient-to-br from-blue-600 to-purple-600 flex items-center justify-center">
                 <span className="text-white text-lg font-semibold">Article {index + 1}</span>

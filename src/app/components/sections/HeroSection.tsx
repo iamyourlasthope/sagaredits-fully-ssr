@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Instagram, Youtube, ExternalLink } from "lucide-react";
 import HeroButtons from "./HeroButtons";
+import { Suspense } from "react";
 
 export default function HeroSection() {
   return (
@@ -14,20 +15,22 @@ export default function HeroSection() {
         backgroundColor: "#050a15"
       }}
     >
-      <div className="fogwrapper">
-        <div id="foglayer_01">
-          <div className="image01"></div>
-          <div className="image02"></div>
+      <Suspense fallback={null}>
+        <div className="fogwrapper">
+          <div id="foglayer_01">
+            <div className="image01"></div>
+            <div className="image02"></div>
+          </div>
+          <div id="foglayer_02">
+            <div className="image01"></div>
+            <div className="image02"></div>
+          </div>
+          <div id="foglayer_03">
+            <div className="image01"></div>
+            <div className="image02"></div>
+          </div>
         </div>
-        <div id="foglayer_02">
-          <div className="image01"></div>
-          <div className="image02"></div>
-        </div>
-        <div id="foglayer_03">
-          <div className="image01"></div>
-          <div className="image02"></div>
-        </div>
-      </div>
+      </Suspense>
       <div className="container mx-auto max-w-7xl w-full relative z-10">
         <div className="grid lg:grid-cols-2 gap-2 sm:gap-8 lg:gap-16 items-center w-full">
           {/* Left Content */}
@@ -89,6 +92,8 @@ export default function HeroSection() {
                 height={512}
                 className="w-full h-full object-center object-cover"
                 priority
+                placeholder="blur"
+                blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCdABmX/9k="
               />
             </div>
           </div>

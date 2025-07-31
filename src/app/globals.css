@@ -5,6 +5,11 @@
   --foreground: #171717;
 }
 
+/* Critical CSS for above-the-fold content */
+.critical-styles {
+  font-display: swap;
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
