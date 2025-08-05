@@ -614,3 +614,82 @@ html {
     height: 2.5rem;
   }
 }
+
+.glitch-img {
+  opacity: 0;
+  animation: glitch-fade 6s infinite;
+  position: absolute;
+  inset: 0;
+}
+.glitch-img.rgb {
+  filter: none;
+  animation: glitch-fade-rgb 6s infinite;
+}
+.glitch-img::before,
+.glitch-img::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  pointer-events: none;
+  opacity: 0;
+  z-index: 3;
+}
+.glitch-img::before {
+  background: repeating-linear-gradient(0deg, rgba(0,255,255,0.15) 0 2px, transparent 2px 6px);
+  animation: glitch-lines-cyan 6s infinite;
+}
+.glitch-img::after {
+  background: repeating-linear-gradient(0deg, rgba(255,0,255,0.15) 0 1px, transparent 1px 5px);
+  animation: glitch-lines-magenta 6s infinite;
+}
+@keyframes glitch-fade {
+  0%, 70%, 100% { opacity: 0; filter: none; transform: none; }
+  75%, 97% { opacity: 1; filter: none; transform: none; }
+  98%, 100% { opacity: 0; filter: none; transform: none; }
+}
+@keyframes glitch-fade-rgb {
+  0%, 70%, 100% { opacity: 0; filter: none; }
+  75%, 80% { opacity: 1; filter: drop-shadow(-2px 0 0 #f0f) drop-shadow(2px 0 0 #0ff); }
+  81%, 97% { opacity: 1; filter: none; }
+  98%, 100% { opacity: 0; filter: none; }
+}
+@keyframes glitch-lines-cyan {
+  0%, 70%, 100% { opacity: 0; }
+  75%, 80% { opacity: 0.7; }
+  81%, 97% { opacity: 0.3; }
+  98%, 100% { opacity: 0; }
+}
+@keyframes glitch-lines-magenta {
+  0%, 70%, 100% { opacity: 0; }
+  75%, 80% { opacity: 0.5; }
+  81%, 97% { opacity: 0.2; }
+  98%, 100% { opacity: 0; }
+}
+
+@keyframes hero-img-1-fade {
+  0%, 40% { opacity: 1; }
+  41%, 92% { opacity: 0; }
+  93%, 100% { opacity: 1; }
+}
+@keyframes hero-img-glitch-fade {
+  0%, 40%, 43%, 92%, 95%, 100% { opacity: 0; }
+  41%, 42% { opacity: 1; }
+  93%, 94% { opacity: 1; }
+}
+@keyframes hero-img-3-fade {
+  0%, 42% { opacity: 0; }
+  43%, 92% { opacity: 1; }
+  93%, 100% { opacity: 0; }
+}
+
+.hero-img-1 {
+  animation: hero-img-1-fade 8s infinite;
+}
+.hero-img-glitch {
+  animation: hero-img-glitch-fade 8s infinite;
+}
+.hero-img-3 {
+  animation: hero-img-3-fade 8s infinite;
+}
+
+

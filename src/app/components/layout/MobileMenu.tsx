@@ -1,32 +1,20 @@
 "use client";
 import { useState } from "react";
 import { Menu } from "lucide-react";
+import Link from "next/link";
 
 const navItems = [
-  { name: "Home", section: "home" },
-  { name: "Merch", section: "merch" },
-  { name: "About", section: "about" },
-  { name: "Articles", section: "articles" },
-  { name: "Contact", section: "contact" },
-  { name: "View My Work", section: "projects" },
-  { name: "Promote Your Brand", section: "services" },
+  { name: "Home", href: "/" },
+  { name: "Merch", href: "/merch" },
+  { name: "About", href: "/about" },
+  { name: "Articles", href: "/articles" },
+  { name: "Contact", href: "/contact" },
+  { name: "View My Work", href: "/projects" },
+  { name: "Promote Your Brand", href: "/campaign" },
 ];
 
 export default function MobileMenu() {
   const [open, setOpen] = useState(false);
-
-  const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      const offset = window.innerWidth < 640 ? 60 : 0;
-      const elementPosition = element.offsetTop - offset;
-      window.scrollTo({
-        top: elementPosition,
-        behavior: "smooth"
-      });
-    }
-    setOpen(false);
-  };
 
   return (
     <>
@@ -64,8 +52,9 @@ export default function MobileMenu() {
             <ul className="flex flex-col gap-7 mt-8">
               {navItems.map((item) => (
                 <li key={item.name}>
-                  <button
-                    onClick={() => scrollToSection(item.section)}
+                  <Link
+                    href={item.href}
+                    onClick={() => setOpen(false)}
                     className={`block text-lg font-semibold py-2 px-2 rounded focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 hover:bg-blue-900/10 hover:text-blue-400 transition-colors w-full text-left ${
                       item.name === "Promote Your Brand" 
                         ? "bg-blue-600 text-white hover:bg-blue-700" 
@@ -74,7 +63,7 @@ export default function MobileMenu() {
                     tabIndex={0}
                   >
                     {item.name}
-                  </button>
+                  </Link>
                 </li>
               ))}
             </ul>

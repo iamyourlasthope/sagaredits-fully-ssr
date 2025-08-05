@@ -1,0 +1,47 @@
+.videoSection {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  margin: 0;
+  padding: 0;
+}
+
+.videoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  height: 355px; /* Desktop default */
+}
+
+/* Video fills container height, width auto to maintain aspect ratio,
+   object-fit: cover to avoid black bars */
+.video {
+  display: block;
+  height: 100%;      /* Always matches container height */
+  width: auto;       /* Flexible width, maintains aspect ratio */
+  object-fit: cover; /* Fill container fully, no black bars */
+  background: #000;
+  border-radius: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .videoContainer {
+    height: 250px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .videoContainer {
+    height: 160px;
+  }
+}

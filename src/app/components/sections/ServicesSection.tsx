@@ -12,7 +12,7 @@ export default function ServicesSection() {
         {/* Heading and Subtitle */}
         <div className="flex flex-col items-center mb-1 sm:mb-2">
           <h2 className="text-xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-center mb-2 whitespace-nowrap mt-4 sm:mt-0">
-            My <span className="text-blue-500">Services</span>
+            What I <span className="text-blue-500">Offer?</span>
           </h2>
           <h2 className="text-base sm:text-base md:text-xl text-blue-200 text-center mb-6 max-w-2xl">
             Let&apos;s create content that resonates, engages, and converts your audience.

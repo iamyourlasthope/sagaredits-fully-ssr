@@ -1,4 +1,5 @@
 import { Instagram, Youtube, Twitter, Facebook, Linkedin } from "lucide-react";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -19,18 +20,18 @@ export default function Footer() {
             {/* Navigation */}
             <div className="flex-1 mb-2 md:mb-0 md:text-right">
               <ul className="space-y-2 text-base md:space-y-3">
-                <li><a href="#home" className="hover:text-blue-400 transition">Home</a></li>
-                <li><a href="#about" className="hover:text-blue-400 transition">About</a></li>
-                <li><a href="#projects" className="hover:text-blue-400 transition">View My Work</a></li>
-                <li><a href="#services" className="hover:text-blue-400 transition">Services</a></li>
-                <li><a href="#contact" className="hover:text-blue-400 transition">Contact</a></li>
+                <li><Link href="/" className="hover:text-blue-400 transition">Home</Link></li>
+                <li><Link href="/about" className="hover:text-blue-400 transition">About</Link></li>
+                <li><Link href="/projects" className="hover:text-blue-400 transition">View My Work</Link></li>
+                <li><Link href="/merch" className="hover:text-blue-400 transition">Merch</Link></li>
+                <li><Link href="/contact" className="hover:text-blue-400 transition">Contact</Link></li>
               </ul>
             </div>
             {/* Legal + Social + Button */}
             <div className="flex-1 flex flex-col items-start min-w-[120px] gap-y-1 md:items-start md:text-left md:ml-16">
               <ul className="space-y-2 text-base mb-2 text-left">
-                <li><a href="#" className="hover:text-blue-400 transition">Privacy Policy</a></li>
-                <li><a href="#" className="hover:text-blue-400 transition">Terms & Conditions</a></li>
+                <li><Link href="/privacy" className="hover:text-blue-400 transition">Privacy Policy</Link></li>
+                <li><Link href="/terms" className="hover:text-blue-400 transition">Terms & Conditions</Link></li>
               </ul>
               <div className="flex items-center space-x-2 mb-2 md:justify-start">
                 <a href="https://www.instagram.com/sagar.edits/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="hover:text-pink-400 transition"><Instagram className="w-5 h-5" /></a>
@@ -39,7 +40,7 @@ export default function Footer() {
                 <a href="https://linkedin.com/in/sagarsingh12" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="hover:text-blue-400 transition"><Linkedin className="w-5 h-5" /></a>
                 <a href="https://youtube.com/sagareditsofficial" target="_blank" rel="noopener noreferrer" aria-label="YouTube" className="hover:text-red-500 transition"><Youtube className="w-5 h-5" /></a>
               </div>
-              <a href="#contact" className="inline-block px-3 py-1 rounded-full bg-blue-600 text-white font-semibold shadow hover:bg-blue-700 transition text-center text-sm">Contact Us</a>
+              <Link href="/contact" className="inline-block px-3 py-1 rounded-full bg-blue-600 text-white font-semibold shadow hover:bg-blue-700 transition text-center text-sm">Contact Us</Link>
             </div>
           </div>
         </div>
