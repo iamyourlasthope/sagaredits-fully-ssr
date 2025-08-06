@@ -1,4 +1,4 @@
-import CampaignForm from "./CampaignForm";
+import CampaignForm from "../components/forms/CampaignForm";
 
 export const metadata = {
   title: "Start Your Campaign – Sagar Edits",
