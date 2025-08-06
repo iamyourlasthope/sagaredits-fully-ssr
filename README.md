@@ -95,7 +95,7 @@ This project is for personal/portfolio use. For commercial use or custom builds,
 
 ## 🌐 Live Demo
 
-_Coming soon or add your Vercel/Netlify link here!_
+_Coming soon!_
 
 ---
 
