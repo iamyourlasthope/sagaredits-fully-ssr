@@ -7,7 +7,8 @@ import AnimatedCurvedHeader from "./AnimatedCurvedHeader";
 export default function HeroSection() {
   return (
     <AnimatedCurvedHeader>
-      <section className="relative z-10 min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 pt-28">
+      <section className="relative z-10 min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 pt-28" 
+               style={{background: 'radial-gradient(ellipse at 60% 40%, #0a0a0a 60%, #0a1a2f 100%)'}}>
         {/* pt-28 to clear fixed navbar */}
         <div className="max-w-4xl mx-auto w-full text-center">
           <div className="space-y-3 sm:space-y-5 lg:space-y-6">

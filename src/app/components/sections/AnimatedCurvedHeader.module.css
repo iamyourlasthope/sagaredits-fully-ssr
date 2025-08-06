@@ -4,18 +4,19 @@
   position: relative;
   width: 100%;
   min-height: 100vh;
-  background: radial-gradient(ellipse at 60% 40%, #0a0a0a 60%, #0a1a2f 100%);
+  background: transparent;
   color: #fff;
   font-family: 'Ubuntu', sans-serif;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .svgContainer {
   position: absolute;
-  top: -20%; /* Move SVG up to cover more content */
+  bottom: 0; /* Position at bottom of container */
   right: 0;
   left: 0;
   z-index: 1;
+  transform: translateY(50%); /* Move half of SVG below the container */
 }
 
 .svg {
@@ -51,22 +52,22 @@
 /* Responsive design */
 @media (max-width: 768px) {
   .svgContainer {
-    top: -15%; /* Slightly less offset on tablets */
+    transform: translateY(40%); /* Less transform on tablets */
   }
   
   .header {
     padding-top: 15vw;
-    padding-bottom: 25vw;
+    padding-bottom: 15vw; /* Reduced bottom padding */
   }
 }
 
 @media (max-width: 480px) {
   .svgContainer {
-    top: -10%; /* Even less offset on mobile */
+    transform: translateY(30%); /* Even less transform on mobile */
   }
   
   .header {
     padding-top: 20vw;
-    padding-bottom: 20vw;
+    padding-bottom: 10vw; /* Reduced bottom padding */
   }
 } 
