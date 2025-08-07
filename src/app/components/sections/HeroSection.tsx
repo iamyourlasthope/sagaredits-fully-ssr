@@ -10,7 +10,7 @@ export default function HeroSection() {
       {/* Video background filling full width and height of viewport */}
       <div className="absolute top-53 left-0 w-full h-full z-0 flex justify-center">
   <video
-    src="/Video/Viral-Indian-Meme-Collage.mp4"
+    src="/Video/Indian-Viral-Memes-Collage.webm"
     autoPlay
     loop
     muted
