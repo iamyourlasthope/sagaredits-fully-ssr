@@ -10,7 +10,7 @@ export default function HeroSection() {
       {/* Video background filling full width and height of viewport */}
       <div className="absolute top-53 left-0 w-full h-full z-0 flex justify-center">
   <video
-    src="/Video/Indian-Viral-Meme-Collage.webm"
+    src="/Video/Viral-Indian-Meme-Collage.mp4"
     autoPlay
     loop
     muted
@@ -47,13 +47,13 @@ export default function HeroSection() {
             </h2>
 
             {/* Social Stats */}
-            <nav className="flex flex-col sm:flex-row gap-2 sm:gap-3 max-w-md mx-auto">
+            <nav className="flex flex-row gap-2 sm:gap-3 max-w-md mx-auto">
               {/* Instagram */}
               <a
                 href="https://www.instagram.com/sagar.edits/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex-1 bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg sm:rounded-2xl p-2 sm:p-3 flex items-center space-x-2 sm:space-x-3 group cursor-pointer hover:bg-white/15 transition-all duration-300 touch-manipulation min-h-[38px] sm:min-h-[44px] max-w-[160px] sm:max-w-none mx-auto"
+                className="flex-1 bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg sm:rounded-2xl p-2 sm:p-3 flex items-center space-x-2 sm:space-x-3 group cursor-pointer hover:bg-white/15 transition-all duration-300 touch-manipulation min-h-[38px] sm:min-h-[44px] max-w-[160px] sm:max-w-none mx-auto order-1"
                 aria-label="Follow Sagar Singh on Instagram - 100K+ followers"
                 title="Follow Sagar Singh on Instagram"
               >
@@ -70,7 +70,7 @@ export default function HeroSection() {
                 href="https://youtube.com/sagareditsofficial"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex-1 bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg sm:rounded-2xl p-2 sm:p-3 flex items-center space-x-2 sm:space-x-3 group cursor-pointer hover:bg-white/15 transition-all duration-300 touch-manipulation min-h-[38px] sm:min-h-[44px] max-w-[160px] sm:max-w-none mx-auto"
+                className="flex-1 bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg sm:rounded-2xl p-2 sm:p-3 flex items-center space-x-2 sm:space-x-3 group cursor-pointer hover:bg-white/15 transition-all duration-300 touch-manipulation min-h-[38px] sm:min-h-[44px] max-w-[160px] sm:max-w-none mx-auto order-2"
                 aria-label="Subscribe to Sagar Singh on YouTube - 100K+ subscribers"
                 title="Subscribe to Sagar Singh on YouTube"
               >
