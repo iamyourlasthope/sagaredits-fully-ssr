@@ -7,7 +7,7 @@ export default function HeroSection() {
   return (
     <div className="relative overflow-hidden">
       {/* Hero content section */}
-      <section className="relative z-10 flex flex-col items-center justify-center px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 pt-24 sm:pt-20 lg:pt-24 pb-4 sm:pb-6 lg:pb-8">
+      <section className="relative z-10 flex flex-col items-center justify-center px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 pt-24 sm:pt-20 lg:pt-24 pb-0 sm:pb-1 lg:pb-2">
         <div className="max-w-4xl w-full mx-auto text-center space-y-1 sm:space-y-2 lg:space-y-3">
           <h1 className="font-bold mt-0">
             <span className="block text-base sm:text-lg font-medium mb-0 sm:mb-1">
@@ -76,7 +76,7 @@ export default function HeroSection() {
       </section>
 
       {/* Video section below content */}
-      <div className="relative w-full z-0 overflow-hidden">
+      <div className="relative w-full z-0 overflow-hidden -mt-1">
         <div className="relative w-[350%] sm:w-[250%] md:w-[180%] lg:w-full -mx-[125%] sm:-mx-[75%] md:-mx-[40%] lg:mx-0">
           <video
             src="/Video/Indian-Viral-Memes-Collage.webm"
@@ -86,6 +86,32 @@ export default function HeroSection() {
             playsInline
             className="w-full h-auto"
           />
+          
+          {/* SVG Curve Overlay */}
+          <div className="absolute -top-2 -left-2 w-[calc(100%+4px)] h-24 pointer-events-none">
+     <svg
+     viewBox="0 0 100 24"
+     preserveAspectRatio="none"
+     className="w-full h-full"
+   >
+                                                                               <path
+          d="
+            M0,0 
+            L100,0 
+            L100,8 
+            Q50,30 0,8 
+            Z
+          "
+          fill="#0a0a0a"  // exact hero page background color for seamless transition
+        />
+  </svg>
+</div>
+
+
+
+
+
+
         </div>
       </div>
     </div>
