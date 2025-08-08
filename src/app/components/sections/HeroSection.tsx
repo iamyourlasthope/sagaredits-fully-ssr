@@ -7,38 +7,38 @@ export default function HeroSection() {
   return (
     <div className="relative overflow-hidden">
       {/* Hero content section */}
-      <section className="relative z-10 flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8 pt-24 sm:pt-20 lg:pt-24 pb-4 sm:pb-6 lg:pb-8">
+      <section className="relative z-10 flex flex-col items-center justify-center px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 pt-24 sm:pt-20 lg:pt-24 pb-4 sm:pb-6 lg:pb-8">
         <div className="max-w-4xl w-full mx-auto text-center space-y-1 sm:space-y-2 lg:space-y-3">
           <h1 className="font-bold mt-0">
             <span className="block text-base sm:text-lg font-medium mb-0 sm:mb-1">
               Turning Ideas Into
             </span>
-            <span className="flex flex-wrap justify-center items-baseline gap-x-1 text-xl sm:text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold leading-tight">
+            <span className="flex flex-wrap justify-center items-baseline gap-x-1 text-3xl sm:text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold leading-tight">
               <span className="text-center">
                 Viral Content With <span className="text-blue-500">Memes</span>
               </span>
             </span>
           </h1>
 
-          <h2 className="block text-sm sm:text-lg font-normal mt-0 sm:mt-1">
-            <span className="text-white">
-              I help brands grow with scroll-stopping,{" "}
-              <span className="font-bold">relatable</span> content.
-            </span>
-            <br />
-            <span className="text-blue-300 italic font-bold">
-              Let's make your next post go viral.
-            </span>
-          </h2>
+                      <h2 className="block text-sm sm:text-lg font-normal mt-0 sm:mt-1">
+           <span className="text-white">
+             <div className="block sm:inline sm:contents">
+               <div className="block sm:inline">I help brands grow organically with</div>
+               <div className="block sm:inline font-bold">HUMOROUS, RELATABLE, and VIRAL Content</div>
+               <div className="block sm:inline">that captures attention and drives engagement.</div>
+               <div className="text-blue-300 italic font-bold block sm:inline">Let's make your next post go viral.</div>
+             </div>
+           </span>
+            </h2>
 
-          {/* Social Stats */}
-          <nav className="flex flex-row gap-2 sm:gap-3 max-w-md mx-auto">
+                                {/* Social Stats */}
+          <nav className="flex flex-row gap-2 max-w-md mx-auto mt-6 sm:mt-0">
             {/* Instagram */}
             <a
               href="https://www.instagram.com/sagar.edits/"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex-1 bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg sm:rounded-2xl p-2 sm:p-3 flex items-center space-x-2 sm:space-x-3 group cursor-pointer hover:bg-white/15 transition-all duration-300 touch-manipulation min-h-[38px] sm:min-h-[44px] max-w-[160px] sm:max-w-none mx-auto order-1"
+              className="flex-1 bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg sm:rounded-2xl p-2 sm:p-3 flex items-center space-x-2 sm:space-x-3 group cursor-pointer hover:bg-white/15 transition-all duration-300 touch-manipulation min-h-[38px] sm:min-h-[44px] mx-auto order-1"
               aria-label="Follow Sagar Singh on Instagram - 100K+ followers"
               title="Follow Sagar Singh on Instagram"
             >
@@ -55,7 +55,7 @@ export default function HeroSection() {
               href="https://youtube.com/sagareditsofficial"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex-1 bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg sm:rounded-2xl p-2 sm:p-3 flex items-center space-x-2 sm:space-x-3 group cursor-pointer hover:bg-white/15 transition-all duration-300 touch-manipulation min-h-[38px] sm:min-h-[44px] max-w-[160px] sm:max-w-none mx-auto order-2"
+              className="flex-1 bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg sm:rounded-2xl p-2 sm:p-3 flex items-center space-x-2 sm:space-x-3 group cursor-pointer hover:bg-white/15 transition-all duration-300 touch-manipulation min-h-[38px] sm:min-h-[44px] mx-auto order-2"
               aria-label="Subscribe to Sagar Singh on YouTube - 100K+ subscribers"
               title="Subscribe to Sagar Singh on YouTube"
             >
@@ -77,7 +77,7 @@ export default function HeroSection() {
 
       {/* Video section below content */}
       <div className="relative w-full z-0 overflow-hidden">
-        <div className="relative w-[300%] sm:w-[200%] md:w-[150%] lg:w-full -mx-[100%] sm:-mx-[50%] md:-mx-[25%] lg:mx-0">
+        <div className="relative w-[350%] sm:w-[250%] md:w-[180%] lg:w-full -mx-[125%] sm:-mx-[75%] md:-mx-[40%] lg:mx-0">
           <video
             src="/Video/Indian-Viral-Memes-Collage.webm"
             autoPlay
