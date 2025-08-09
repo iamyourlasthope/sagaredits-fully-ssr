@@ -18,6 +18,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.sagaredits.in"),
   title: "Sagar Edits – Meme Marketer & Digital Creator",
   description: "Meme Marketing Expert & Digital Creator | 100K+ Instagram & YouTube | Viral Content & Brand Growth",
   keywords: ["meme marketing", "digital creator", "content creation", "social media", "marketing", "Sagar Edits", "Sagar Edits Instagram", "Sagar Edits YouTube", "Sagar Edits memer", "meme marketing expert", "digital creator", "viral content", "brand growth", "start your campaign", "paid promotion", "promos India", "content creation", "social media marketing", "reels creator", "video promotion", "online branding"],

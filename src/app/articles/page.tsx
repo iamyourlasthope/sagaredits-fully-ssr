@@ -1,5 +1,4 @@
 import { articles } from "../components/sections/ArticlesSection";
-import Link from "next/link";
 import thumbnailData from "../../data/thumbnails.json";
 
 export const metadata = {
@@ -28,19 +27,35 @@ export default function ArticlesPage() {
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {articlesWithThumbnails.map((article, idx) => (
-              <Link key={idx} href={`/articles/${idx}`} className="group rounded-2xl overflow-hidden border border-blue-900/40 bg-[#101828] hover:border-blue-600/60 transition-colors">
-                <div className="w-full h-48 bg-gradient-to-br from-blue-600 to-purple-600">
+              <div
+                key={idx}
+                className="group rounded-2xl overflow-hidden border border-blue-900/40 bg-[#101828] hover:border-blue-600/60 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-xl hover:shadow-blue-900/30"
+              >
+                <div className="w-full h-48 bg-gradient-to-br from-blue-600 to-purple-600 overflow-hidden">
                   {article.thumbnail && (
                     // eslint-disable-next-line @next/next/no-img-element
-                    <img src={article.thumbnail} alt={article.title} className="w-full h-full object-cover" />
+                    <img
+                      src={article.thumbnail}
+                      alt={article.title}
+                      className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                    />
                   )}
                 </div>
                 <div className="p-5">
                   <h3 className="text-white font-semibold text-lg group-hover:text-blue-300 transition-colors">{article.title}</h3>
                   <p className="text-white/70 text-sm mt-2">{article.description}</p>
-                  <span className="mt-4 inline-flex text-blue-400 text-sm">Read more →</span>
+                  <a
+                    href={article.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-4 inline-flex items-center gap-1 text-blue-400 hover:text-blue-300 text-sm font-medium"
+                    aria-label={`Read full article: ${article.title}`}
+                  >
+                    Read More
+                    <span aria-hidden>→</span>
+                  </a>
                 </div>
-              </Link>
+              </div>
             ))}
           </div>
         </div>

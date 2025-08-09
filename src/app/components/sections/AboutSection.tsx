@@ -118,31 +118,17 @@ const AboutSection = () => {
           </div>
         </header>
 
-        {/* Quick Stats */}
-        <div className="max-w-5xl mx-auto grid grid-cols-3 gap-2 sm:gap-6 mb-8 sm:mb-12">
-          <div className="rounded-2xl bg-[#101828] border border-blue-900/40 px-2 py-3 sm:p-5 text-center transition-transform duration-200 hover:-translate-y-0.5">
-            <div className="text-lg sm:text-3xl font-extrabold text-white leading-none">5+ yrs</div>
-            <div className="text-blue-300 mt-1 text-[10px] sm:text-sm leading-none">Experience</div>
-          </div>
-          <div className="rounded-2xl bg-[#101828] border border-blue-900/40 px-2 py-3 sm:p-5 text-center transition-transform duration-200 hover:-translate-y-0.5">
-            <div className="text-lg sm:text-3xl font-extrabold text-white leading-none">100K+</div>
-            <div className="text-blue-300 mt-1 text-[10px] sm:text-sm leading-none">Followers</div>
-          </div>
-          <div className="rounded-2xl bg-[#101828] border border-blue-900/40 px-2 py-3 sm:p-5 text-center transition-transform duration-200 hover:-translate-y-0.5">
-            <div className="text-lg sm:text-3xl font-extrabold text-white leading-none">Creator Award</div>
-            <div className="text-blue-300 mt-1 text-[10px] sm:text-sm leading-none">YouTube Silver</div>
-          </div>
-        </div>
+        {/* Quick Stats removed per request */}
 
         {/* Skills & Silver Play Button in a box */}
-        <div className="relative bg-gradient-to-br from-[#0a1a2f] to-[#0a1622] border border-blue-400/30 rounded-3xl shadow-2xl overflow-hidden">
-          <div className="bg-gradient-to-r from-blue-600/20 to-purple-600/20 border-b border-blue-400/20 px-6 py-4">
+        <div className="relative w-full max-w-5xl mx-auto bg-gradient-to-br from-[#0a1a2f] to-[#0a1622] border border-blue-400/30 rounded-3xl shadow-2xl overflow-hidden">
+          <div className="bg-gradient-to-r from-blue-600/20 to-purple-600/20 border-b border-blue-400/20 px-4 sm:px-5 py-3">
             <h3 className="text-lg sm:text-xl font-semibold text-white">Skills & Creator Award</h3>
           </div>
-          <div className="grid lg:grid-cols-2 gap-4 sm:gap-10 lg:gap-12 items-center p-6 sm:p-8">
+          <div className="grid lg:grid-cols-2 gap-4 sm:gap-6 lg:gap-8 items-center p-4 sm:p-6">
             {/* Silver Play Button on the left */}
             <div className="flex justify-center order-1">
-              <div className="text-center md:text-left md:pl-6 lg:pl-8">
+              <div className="text-center md:text-left md:pl-2 lg:pl-3">
                 <Image
                   src="/images/Silver_Play_Button.webp"
                   alt="YouTube Silver Play Button Award"

@@ -1,6 +1,6 @@
 export default function PrivacyPage() {
   return (
-    <div className="relative min-h-screen flex flex-col bg-gradient-to-br from-[#0a232e] to-[#08222b]">
+    <div className="relative min-h-screen flex flex-col bg-gradient-to-br from-[#0a232e] to-[#08222b] py-12">
       <div className="fixed inset-0 z-[-1] bg-gradient-to-br from-[#0a0a0a] via-[#1a1a1a] to-blue-900 opacity-80 backdrop-blur-xl" aria-hidden="true" />
       <div className="relative z-10 w-full flex flex-col pt-15">
         <div className="container mx-auto max-w-4xl px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16">
