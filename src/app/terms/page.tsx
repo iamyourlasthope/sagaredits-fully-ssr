@@ -88,8 +88,8 @@ export default function TermsPage() {
               <h2 className="text-2xl font-bold text-white mt-8 mb-4">7. Termination of Access</h2>
               <p>We may suspend access without notice if <span className="font-semibold text-white">Terms</span> are violated or data submitted is harmful.</p>
 
-              <h2 className="text-2xl font-bold text-white mt-8 mb-4">8. "AS IS" and "AS AVAILABLE" Disclaimer</h2>
-              <p className="mb-4">Our <span className="font-semibold text-white">Service</span> is provided “as is,” with no warranty or guarantee of uninterrupted operation.</p>
+              <h2 className="text-2xl font-bold text-white mt-8 mb-4">8. &ldquo;AS IS&rdquo; and &ldquo;AS AVAILABLE&rdquo; Disclaimer</h2>
+              <p className="mb-4">Our <span className="font-semibold text-white">Service</span> is provided &ldquo;as is,&rdquo; with no warranty or guarantee of uninterrupted operation.</p>
               <ul className="list-disc list-inside space-y-2 ml-4 mb-4">
                 <li>No guarantee of being error-free</li>
                 <li>No compatibility assurance</li>
@@ -119,7 +119,7 @@ export default function TermsPage() {
               <p>Failure to enforce any right does not waive it.</p>
 
               <h2 className="text-2xl font-bold text-white mt-8 mb-4">14. Changes to These Terms</h2>
-              <p>We may revise these <span className="font-semibold text-white">Terms</span>. Major changes will include 30 days' notice.</p>
+              <p>We may revise these <span className="font-semibold text-white">Terms</span>. Major changes will include 30 days&apos; notice.</p>
 
               <h2 className="text-2xl font-bold text-white mt-8 mb-4">15. Contact Us</h2>
               <p className="mb-4">Reach out for questions:</p>

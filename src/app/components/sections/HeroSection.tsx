@@ -1,7 +1,5 @@
-import Image from "next/image";
 import { Instagram, Youtube, ExternalLink } from "lucide-react";
 import HeroButtons from "./HeroButtons";
-import styles from "./MemeCollageVideoSection.module.css";
 
 export default function HeroSection() {
   return (
@@ -26,7 +24,7 @@ export default function HeroSection() {
                <div className="block sm:inline">I help brands grow organically with</div>
                <div className="block sm:inline font-bold">HUMOROUS, RELATABLE, and VIRAL Content</div>
                <div className="block sm:inline">that captures attention and drives engagement.</div>
-               <div className="text-blue-300 italic font-bold block sm:inline">Let's make your next post go viral.</div>
+               <div className="text-blue-300 italic font-bold block sm:inline">Let&apos;s make your next post go viral.</div>
              </div>
            </span>
             </h2>

@@ -1,4 +1,4 @@
-import ArticlesSection, { articles } from "../components/sections/ArticlesSection";
+import { articles } from "../components/sections/ArticlesSection";
 import Link from "next/link";
 import thumbnailData from "../../data/thumbnails.json";
 
@@ -10,7 +10,7 @@ export const metadata = {
 export default function ArticlesPage() {
   // merge thumbnails for grid
   const articlesWithThumbnails = articles.map((article, index) => {
-    const thumbnailInfo = (thumbnailData as any[]).find((t) => t.index === index);
+    const thumbnailInfo = (thumbnailData as { index: number; url: string; success: boolean }[]).find((t) => t.index === index);
     return {
       ...article,
       thumbnail: thumbnailInfo?.success ? thumbnailInfo.url : undefined,

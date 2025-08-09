@@ -56,7 +56,7 @@ export default function PrivacyPage() {
 
               <h3 className="text-xl font-semibold text-white mt-6 mb-3">Usage Data</h3>
               <p>
-                <span className="text-white font-semibold">Usage Data</span> may include information such as your device's IP address, browser type, pages visited, time spent, and diagnostic data.
+                <span className="text-white font-semibold">Usage Data</span> may include information such as your device&apos;s IP address, browser type, pages visited, time spent, and diagnostic data.
               </p>
 
               <h3 className="text-xl font-semibold text-white mt-6 mb-3">Information from Third-Party Social Media Services</h3>
@@ -110,7 +110,7 @@ export default function PrivacyPage() {
                 We use reasonable security measures, but no method is completely secure.
               </p>
 
-              <h2 className="text-2xl font-bold text-white mt-8 mb-4">Children's Privacy</h2>
+              <h2 className="text-2xl font-bold text-white mt-8 mb-4">Children&apos;s Privacy</h2>
               <p>
                 Our Service is not for individuals under 18. Contact us if your child has submitted data.
               </p>
