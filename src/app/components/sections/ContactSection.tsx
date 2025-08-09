@@ -1,5 +1,5 @@
 import { Mail, Instagram, Youtube, Linkedin } from "lucide-react";
-import ContactForm from "../forms/ContactForm";
+import ContactForm from "../sections/ContactForm";
 
 export default function ContactSection() {
   return (

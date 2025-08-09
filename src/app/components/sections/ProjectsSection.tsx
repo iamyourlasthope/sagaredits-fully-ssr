@@ -10,12 +10,20 @@ const projects = [
     link: "https://www.instagram.com/p/C_ncuShy80p/",
   },
   {
-    title: "Hip Hop India on Amazon Mini TV",
+    title: "Hip Hop India on Amazon Mini TV – Part 1",
     embed: "https://www.instagram.com/p/CvhADjnMVmZ/embed/",
     description: "Promotional content for Hip Hop India series on Amazon Mini TV platform.",
     platform: "Instagram",
     type: "Entertainment Marketing",
     link: "https://www.instagram.com/p/CvhADjnMVmZ/",
+  },
+  {
+    title: "Kisi ka Bhai Kisi ki Jaan Promo",
+    embed: "https://www.instagram.com/p/Crn9A3LOM7X/embed/",
+    description: "Promotional content for the Bollywood movie featuring Salman Khan.",
+    platform: "Instagram",
+    type: "Entertainment",
+    link: "https://www.instagram.com/p/Crn9A3LOM7X/",
   },
   {
     title: "XYXX Underwear Promo",
@@ -34,20 +42,36 @@ const projects = [
     link: "https://www.instagram.com/p/Cww-tOHyYQl/",
   },
   {
-    title: "Kisi ka Bhai Kisi ki Jaan Promo",
-    embed: "https://www.instagram.com/p/Crn9A3LOM7X/embed/",
-    description: "Promotional content for the Bollywood movie featuring Salman Khan.",
-    platform: "Instagram",
-    type: "Entertainment",
-    link: "https://www.instagram.com/p/Crn9A3LOM7X/",
-  },
-  {
     title: "Hip Hop Promo on Amazon Mini TV",
     embed: "https://www.instagram.com/p/CwnNDY0yaPv/embed/",
     description: "Follow-up promotional campaign for Hip Hop content on Amazon Mini TV.",
     platform: "Instagram",
     type: "Series Promotion",
     link: "https://www.instagram.com/p/CwnNDY0yaPv/",
+  },
+  {
+    title: "Hip Hop India on Amazon Mini TV – Part 2",
+    embed: "https://www.instagram.com/p/CvkJoiWuMXQ/embed/",
+    description: "Promotional content for Hip Hop India series on Amazon Mini TV platform.",
+    platform: "Instagram",
+    type: "Entertainment Marketing",
+    link: "https://www.instagram.com/p/CvkJoiWuMXQ/",
+  },
+  {
+    title: "Hip Hop India on Amazon Mini TV – Part 3",
+    embed: "https://www.instagram.com/p/Cwkvp1BS7fc/embed/",
+    description: "Promotional content for Hip Hop India series on Amazon Mini TV platform.",
+    platform: "Instagram",
+    type: "Entertainment Marketing",
+    link: "https://www.instagram.com/p/Cwkvp1BS7fc/",
+  },
+  {
+    title: "Sab Gazab – Badshah Music Promo",
+    embed: "https://www.instagram.com/p/CrAQ3y4Jbv4/embed/",
+    description: "Promotional video for &apos;Sab Gazab&apos; song by Badshah.",
+    platform: "Instagram",
+    type: "Music Promotion",
+    link: "https://www.instagram.com/p/CrAQ3y4Jbv4/",
   },
 ];
 
@@ -100,7 +124,7 @@ export default function ProjectsSection() {
         </div>
         {/* Hidden projects, shown when checkbox is checked */}
         <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch max-h-0 overflow-hidden opacity-0 transition-all duration-300 peer-checked:max-h-[4000px] peer-checked:opacity-100">
-          {projects.slice(3, 6).map((project, idx) => (
+          {projects.slice(3).map((project, idx) => (
             <div key={idx + 3} className="bg-[#101828] rounded-2xl shadow-2xl p-6 flex flex-col h-full border border-blue-900/40">
               <div className="w-full aspect-[9/12] rounded-xl overflow-hidden mb-4 flex items-center justify-center bg-black">
                 <iframe

@@ -1,5 +1,6 @@
 import thumbnailData from "../../../data/thumbnails.json";
 import ArticlesCarousel from "./ArticlesCarousel";
+import Link from "next/link";
 
 interface Article {
   title: string;
@@ -9,7 +10,7 @@ interface Article {
   thumbnail?: string;
 }
 
-const articles: Article[] = [
+export const articles: Article[] = [
   {
     title: "Hera Pheri's Dramatic Raju on Indian Idol Mashup Goes Viral - Netizens Say 'Neha Kakkar Be Like Chaalis Laat'",
     description: "A hilarious mashup combining Hera Pheri's iconic scene with Indian Idol has become the latest viral sensation.",
@@ -107,6 +108,11 @@ export default function ArticlesSection() {
             {/* Carousel Container with Padding */}
             <div className="px-0 py-6 sm:py-8">
               <ArticlesCarousel articles={articlesWithThumbnails} />
+              <div className="mt-6 flex justify-center">
+                <Link href="/articles" className="px-6 py-2 rounded-full bg-blue-600 text-white font-semibold hover:bg-blue-700 transition-colors">
+                  View all articles
+                </Link>
+              </div>
             </div>
             
           </div>

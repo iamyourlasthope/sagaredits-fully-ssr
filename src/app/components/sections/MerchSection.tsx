@@ -11,9 +11,7 @@ export default function MerchSection() {
         <h2 className="text-xl sm:text-4xl md:text-5xl font-extrabold mb-4 tracking-tight text-center whitespace-nowrap mt-2 sm:mt-0">
           Our <span className="text-blue-400">Merch</span>
         </h2>
-        <p className="text-base sm:text-lg md:text-xl text-blue-300 mb-8 sm:mb-12 max-w-2xl text-center font-medium">
-          Full on meme drip, zero cap. Merch loading… stay tuned, squad!
-        </p>
+        
         <div className="w-full max-w-md mx-auto bg-[#101828] border border-blue-900/40 rounded-2xl shadow-2xl px-2 py-4 sm:px-12 sm:py-12 flex flex-col items-center text-center gap-4 md:max-w-4xl md:flex-row md:items-center md:text-left md:gap-12 md:bg-[#101828] md:border md:border-blue-900/40 md:rounded-2xl md:shadow-2xl">
           {/* Right: Coming Soon (text first on mobile, left on desktop) */}
           <div className="flex-1 flex flex-col items-center md:items-start text-center md:text-left gap-5 min-w-[160px] min-h-[160px] md:min-w-[320px] md:min-h-[320px] justify-center order-1 md:order-2">
